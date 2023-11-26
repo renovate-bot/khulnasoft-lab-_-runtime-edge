@@ -193,15 +193,15 @@ importers:
 
   packages/ponyfill:
     devDependencies:
-      '@runtime-edge/jest-environment':
-        specifier: workspace:*
-        version: link:../jest-environment
       '@edge-runtime/primitives':
         specifier: workspace:*
         version: link:../primitives
       '@edge-runtime/vm':
         specifier: workspace:*
         version: link:../vm
+      '@runtime-edge/jest-environment':
+        specifier: workspace:*
+        version: link:../jest-environment
       acorn:
         specifier: 8.11.2
         version: 8.11.2
@@ -244,12 +244,12 @@ importers:
       '@edge-runtime/format':
         specifier: workspace:*
         version: link:../format
-      '@runtime-edge/ponyfill':
-        specifier: workspace:*
-        version: link:../ponyfill
       '@edge-runtime/vm':
         specifier: workspace:*
         version: link:../vm
+      '@runtime-edge/ponyfill':
+        specifier: workspace:*
+        version: link:../ponyfill
       async-listen:
         specifier: 3.0.1
         version: 3.0.1
@@ -266,8 +266,8 @@ importers:
         specifier: 4.0.2
         version: 4.0.2
       time-span:
-        specifier: 4.0.0
-        version: 4.0.0
+        specifier: 5.1.0
+        version: 5.1.0
     devDependencies:
       '@types/node-fetch':
         specifier: '2'
@@ -2903,9 +2903,9 @@ packages:
       typedarray: 0.0.6
     dev: true
 
-  /convert-hrtime@3.0.0:
-    resolution: {integrity: sha512-7V+KqSvMiHp8yWDuwfww06XleMWVVB9b9tURBx+G7UTADuo5hYPuowKloz4OzOqbPezxgo+fdQ1522WzPG4OeA==}
-    engines: {node: '>=8'}
+  /convert-hrtime@5.0.0:
+    resolution: {integrity: sha512-lOETlkIeYSJWcbbcvjRKGxVMXJR+8+OQb/mTPbA4ObPMytYIsUbuOE0Jzy60hjARYszq1id0j8KgVhC+WGZVTg==}
+    engines: {node: '>=12'}
     dev: false
 
   /convert-source-map@1.9.0:
@@ -7771,11 +7771,11 @@ packages:
       any-promise: 1.3.0
     dev: true
 
-  /time-span@4.0.0:
-    resolution: {integrity: sha512-MyqZCTGLDZ77u4k+jqg4UlrzPTPZ49NDlaekU6uuFaJLzPIN1woaRXCbGeqOfxwc3Y37ZROGAJ614Rdv7Olt+g==}
-    engines: {node: '>=10'}
+  /time-span@5.1.0:
+    resolution: {integrity: sha512-75voc/9G4rDIJleOo4jPvN4/YC4GRZrY8yy1uU4lwrB3XEQbWve8zXoO5No4eFrGcTAMYyoY67p8jRQdtA1HbA==}
+    engines: {node: '>=12'}
     dependencies:
-      convert-hrtime: 3.0.0
+      convert-hrtime: 5.0.0
     dev: false
 
   /title@3.5.3:
