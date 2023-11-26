@@ -1,0 +1,36 @@
+# Edge Runtime Ponyfill
+
+The **@runtime-edge/ponyfill** package helps to have the Edge Runtime APIs available in your environment:
+
+- When running on Edge Runtime, no polyfills will be loaded, and the native implementations will be used.
+- When running on Node.js runtimes, this package will load the polyfills from [@edge-runtime/primitives](/packages/primitives).
+
+Note this is just necessary if you want to run the same code across different environments.
+
+## Installation
+
+```sh npm2yarn
+npm install @runtime-edge/ponyfill
+```
+
+This package includes built-in TypeScript support.
+
+## Usage
+
+Rather than use APIs from the global scope:
+
+```js
+const data = new TextEncoder().encode('Hello, world')
+const digest = await crypto.subtle.digest('SHA-256', content)
+```
+
+Load them from the package instead:
+
+```js
+import { crypto, TextEncoder } from '@runtime-edge/ponyfill'
+
+const data = new TextEncoder().encode('Hello, world')
+const digest = await crypto.subtle.digest('SHA-256', content)
+```
+
+Any [Edge Runtime API](/features/available-apis) is available.

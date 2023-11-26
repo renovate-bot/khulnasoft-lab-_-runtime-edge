@@ -1,0 +1,54 @@
+{
+  "name": "@runtime-edge/jest-environment",
+  "description": "A Jest integration to run assertions in Edge Runtime context.",
+  "homepage": "https://edge-runtime.vercel.app/packages/jest-environment",
+  "version": "2.3.7",
+  "main": "dist/index.js",
+  "repository": {
+    "directory": "packages/jest-environment",
+    "type": "git",
+    "url": "git+https://github.com/khulnasoft/runtime-edge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khulnasoft/runtime-edge/issues"
+  },
+  "keywords": [
+    "edge",
+    "runtime-edge",
+    "functions",
+    "jest",
+    "runtime",
+    "standard",
+    "testing",
+    "web"
+  ],
+  "dependencies": {
+    "@edge-runtime/vm": "workspace:*",
+    "@jest/environment": "29.5.0",
+    "@jest/fake-timers": "29.5.0",
+    "jest-mock": "29.5.0",
+    "jest-util": "29.5.0"
+  },
+  "devDependencies": {
+    "next": "*"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.prod.json",
+    "clean": "pnpm run clean:node && pnpm run clean:build",
+    "clean:build": "rm -rf dist",
+    "clean:node": "rm -rf node_modules",
+    "prebuild": "pnpm run clean:build",
+    "test": "jest"
+  },
+  "license": "MPL-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "dist/index.d.ts"
+}

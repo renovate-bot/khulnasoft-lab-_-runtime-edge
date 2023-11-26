@@ -1,0 +1,22 @@
+# Polyfills
+
+The **Edge Runtime** is built on top of Web APIs available in Node.js.
+
+The minimum Node.js version supported is **v14.6.0** that is mapped to **ES2019**.
+
+Under the hood, the following Web APIs are used by the **Edge Runtime**:
+
+| polyfill                                                                                                                                              | node14 | node16 | node18 |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ | ------ |
+| [util.types](https://github.com/khulnasoft/runtime-edge/blob/main/packages/primitives/src/patches/util-types.js)                                          | x      |        |        |
+| [WebCrypto](https://github.com/khulnasoft/runtime-edge/blob/main/packages/primitives/src/primitives/crypto.js)                                            | x      |        |        |
+| [AbortController, AbortSignal, DOMException](https://github.com/khulnasoft/runtime-edge/blob/main/packages/primitives/src/primitives/abort-controller.js) | x      |        |        |
+| [base64](https://github.com/khulnasoft/runtime-edge/blob/main/packages/primitives/src/primitives/encoding.js)                                             | x      |        |        |
+| [fetch, Request, Response](https://github.com/khulnasoft/runtime-edge/blob/main/packages/primitives/src/primitives/fetch.js)                              | x      | x      |        |
+| [URLPattern](https://github.com/khulnasoft/runtime-edge/blob/main/packages/primitives/src/primitives/url.js)                                              | x      | x      | x      |
+| [Cache](https://github.com/khulnasoft/runtime-edge/blob/main/packages/primitives/src/primitives/cache.js)                                                 | x      | x      | x      |
+| [WebStreams](https://github.com/khulnasoft/runtime-edge/blob/main/packages/primitives/src/primitives/streams.js)                                          | x      | x      | x      |
+
+The Edge Runtime polyfills missing APIs for backward compatibility with older Node.js versions.
+
+In the future, Node.js will become a superset of the Edge Runtime with built-in support for the [available APIs](/features/available-apis).

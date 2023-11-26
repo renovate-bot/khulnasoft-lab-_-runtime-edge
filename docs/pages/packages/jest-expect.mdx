@@ -1,0 +1,66 @@
+# Edge Runtime Jest Expect
+
+The **@runtime-edge/jest-expect** package comes with useful [Jest matchers](https://jestjs.io/docs/expect#expectextendmatchers) to help testing `Request` and `Response` instances.
+
+## Installation
+
+```sh npm2yarn
+npm install @runtime-edge/jest-expect
+```
+
+### Usage
+
+Add the following in your `jest.config.js` file:
+
+```js
+// See https://jestjs.io/docs/configuration#setupfilesafterenv-array
+setupFilesAfterEnv: ['@runtime-edge/jest-expect'],
+```
+
+To include the TypeScript types, add the following in your `tsconfig.json` file:
+
+```json
+// See https://www.typescriptlang.org/tsconfig#include
+"include": [
+  "node_modules/@runtime-edge/jest-expect"
+]
+```
+
+### API
+
+#### .toHaveStatus
+
+It checks for HTTP status code or message correctness:
+
+```js
+const response = new Response('OK')
+
+expect(response).toHaveStatus(200)
+expect(response).toHaveStatus('Successful')
+expect(response).not.toHaveStatus(201)
+```
+
+#### .toHaveJSONBody
+
+It checks if an HTTP request/response body is a JSON:
+
+```js
+const response = Response.json({ hello: 'world' })
+
+expect(response).toHaveJSONBody({ hello: 'world' })
+expect(response).not.toHaveJSONBody({ foo: 'baz' })
+```
+
+#### .toHaveTextBody
+
+It checks if an HTTP request/response body is a text:
+
+```js
+const request = new Request('http://example.com', {
+  method: 'POST',
+  body: 'Hello World',
+})
+
+expect(request).toHaveTextBody('hello world')
+expect(request).not.toHaveTextBody('foo bar')
+```

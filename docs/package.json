@@ -1,0 +1,33 @@
+{
+  "name": "@runtime-edge/docs",
+  "version": "0.0.0",
+  "dependencies": {
+    "@heroicons/react": "~2.0.18",
+    "next": "~14.0.3",
+    "next-themes": "~0.2.1",
+    "nextra": "~2.13.2",
+    "nextra-theme-docs": "~2.13.2",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0",
+    "swr": "~2.2.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "~10.4.16",
+    "postcss": "~8.4.31",
+    "tailwindcss": "~3.3.5"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "build": "next build ",
+    "clean": "pnpm run clean:node && pnpm run clean:build",
+    "clean:build": "rm -rf dist",
+    "clean:node": "rm -rf node_modules",
+    "dev": "next",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "private": true,
+  "license": "MPL-2.0"
+}

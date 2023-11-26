@@ -1,0 +1,48 @@
+{
+  "name": "@edge-runtime/format",
+  "description": "A printf-like string formatter for Edge Runtime",
+  "homepage": "https://github.com/khulnasoft/runtime-edge#readme",
+  "version": "2.2.0",
+  "main": "dist/index.js",
+  "repository": {
+    "directory": "packages/format",
+    "type": "git",
+    "url": "git+https://github.com/khulnasoft/runtime-edge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khulnasoft/runtime-edge/issues"
+  },
+  "keywords": [
+    "edge",
+    "runtime-edge",
+    "format",
+    "formatter",
+    "functions",
+    "printf",
+    "runtime",
+    "standard",
+    "web"
+  ],
+  "devDependencies": {
+    "tsup": "7"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "clean": "pnpm run clean:node && pnpm run clean:build",
+    "clean:build": "rm -rf dist",
+    "clean:node": "rm -rf node_modules",
+    "prebuild": "pnpm run clean:build",
+    "test": "TZ=UTC jest"
+  },
+  "license": "MPL-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "dist/index.d.ts"
+}

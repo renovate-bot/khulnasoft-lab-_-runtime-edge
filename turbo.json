@@ -1,0 +1,37 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "globalEnv": ["RUNNER_OS", "NODE_VERSION"],
+  "pipeline": {
+    "build": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["^build"]
+    },
+    "edge-runtime#build": {
+      "cache": false,
+      "dependsOn": ["^build"],
+      "outputs": ["src/version.ts"]
+    },
+    "@edge-runtime/primitives#build": {
+      "dependsOn": ["^build"],
+      "outputs": [
+        "abort-controller/**",
+        "blob/**",
+        "cache/**",
+        "console/**",
+        "crypto/**",
+        "dist/**",
+        "events/**",
+        "fetch/**",
+        "streams/**",
+        "structured-clone/**",
+        "types/**",
+        "url/**"
+      ]
+    },
+    "test": {
+      "cache": false,
+      "dependsOn": ["build"],
+      "outputs": []
+    }
+  }
+}

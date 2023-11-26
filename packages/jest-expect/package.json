@@ -1,0 +1,55 @@
+{
+  "name": "@runtime-edge/jest-expect",
+  "description": "Custom matchers for Jest's expect to help test Request/Response instances",
+  "homepage": "https://edge-runtime.vercel.app/packages/jest-expect",
+  "version": "1.2.0",
+  "main": "dist/index.js",
+  "repository": {
+    "directory": "packages/jest-expect",
+    "type": "git",
+    "url": "git+https://github.com/khulnasoft/runtime-edge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khulnasoft/runtime-edge/issues"
+  },
+  "keywords": [
+    "edge",
+    "runtime-edge",
+    "functions",
+    "jest",
+    "matchers",
+    "runtime",
+    "standard",
+    "testing",
+    "web"
+  ],
+  "dependencies": {
+    "@jest/environment": "29.5.0",
+    "@jest/fake-timers": "29.5.0",
+    "@jest/globals": "29.7.0"
+  },
+  "devDependencies": {
+    "@runtime-edge/jest-environment": "workspace:*"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "dist",
+    "index.d.ts",
+    "index.js"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.prod.json",
+    "clean": "pnpm run clean:node && pnpm run clean:build",
+    "clean:build": "rm -rf dist",
+    "clean:node": "rm -rf node_modules",
+    "prebuild": "pnpm run clean:build",
+    "test": "jest --no-colors"
+  },
+  "license": "MPL-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "dist/index.d.ts"
+}

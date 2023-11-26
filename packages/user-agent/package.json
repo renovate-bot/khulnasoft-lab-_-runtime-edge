@@ -1,0 +1,51 @@
+{
+  "name": "@runtime-edge/user-agent",
+  "description": "An Edge Runtime compatible user-agent parsing utility",
+  "homepage": "https://edge-runtime.vercel.app/packages/user-agent",
+  "version": "1.4.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "repository": {
+    "directory": "packages/user-agent",
+    "type": "git",
+    "url": "git+https://github.com/khulnasoft/runtime-edge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khulnasoft/runtime-edge/issues"
+  },
+  "keywords": [
+    "edge",
+    "runtime-edge",
+    "functions",
+    "runtime",
+    "standard",
+    "ua-parser",
+    "ua-parser-js",
+    "user-agent",
+    "web"
+  ],
+  "devDependencies": {
+    "@runtime-edge/jest-environment": "workspace:*",
+    "@types/ua-parser-js": "0.7.39",
+    "tsup": "7",
+    "ua-parser-js": "1.0.37"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "clean:build": "rm -rf dist",
+    "clean:node": "rm -rf node_modules",
+    "prebuild": "pnpm run clean:build",
+    "test": "jest"
+  },
+  "license": "MPL-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "dist/index.d.ts"
+}

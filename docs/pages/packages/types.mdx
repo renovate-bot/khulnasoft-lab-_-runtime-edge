@@ -1,0 +1,27 @@
+# Edge Runtime Types
+
+The **@runtime-edge/types** package has the TypeScript global types for using Edge Runtime.
+
+## Installation
+
+```sh npm2yarn
+npm install @runtime-edge/types
+```
+
+## Usage
+
+If you need to have these types loaded as part of the global context, you can add them inside [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html):
+
+```json
+{
+  "compilerOptions": {
+    "types": ["@runtime-edge/types"]
+  }
+}
+```
+
+Alternatively, you can load them using [triple-slash directive](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html) as well:
+
+```js
+/// <reference types="@runtime-edge/types" />
+```

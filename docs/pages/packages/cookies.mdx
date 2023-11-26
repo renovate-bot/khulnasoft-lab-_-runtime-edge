@@ -1,0 +1,78 @@
+# Edge Runtime Cookies
+
+The **@edge-runtime/cookies** package provides high-level HTTP Cookie
+abstractions for Edge-compatible environments, such as Edge Runtime or Vercel
+Edge Functions and Edge Middleware.
+
+The available methods are based on the [`CookieStore API`](https://wicg.github.io/cookie-store/#CookieStore).
+The main difference is that the methods are not asynchronous so they do not return a `Promise`.
+
+## Installation
+
+```sh npm2yarn
+npm install @edge-runtime/cookies
+```
+
+## Usage
+
+### for Request
+
+To access and manipulate request cookies, use the exported `RequestCookies` constructor:
+
+```ts
+import { RequestCookies } from '@edge-runtime/cookies'
+
+function handleRequest(req: Request) {
+  const cookies = new RequestCookies(req.headers)
+  cookies.get('cookie-name')?.value // undefined | string
+  cookies.has('cookie-name') // boolean
+  // do something...
+}
+```
+
+Notes:
+
+- All mutations are performed in place and will update the `Cookie` header in
+  the provided `Request` object.
+
+- When mutating the request cookies, the client won't be able to read the
+  updated/deleted cookies. Please use `ResponseCookies` for that.
+
+#### Available methods
+
+- `get` - A method that takes a cookie `name` and returns an object with `name` and `value`. If a cookie with `name` isn't found, it returns `undefined`. If multiple cookies match, it will only return the first match. The cookie configuration (Max-Age, Path etc) is not being passed by the HTTP client, therefore it's not possible to determine the cookie expiration date.
+- `getAll` - A method that is similar to `get`, but returns a list of all the cookies with a matching `name`. If `name` is unspecified, it returns all the available cookies.
+- `set` - A method that takes an object with properties of `CookieListItem` as defined in the [W3C CookieStore API](https://wicg.github.io/cookie-store/#dictdef-cookielistitem) spec.
+- `delete` - A method that takes either a cookie `name` or a list of names. and removes the cookies matching the name(s). Returns `true` for deleted and `false` for undeleted cookies.
+- `has` - A method that takes a cookie `name` and returns a `boolean` based on if the cookie exists (`true`) or not (`false`).
+- `clear` - A method that takes no argument and will effectively remove the `Cookie` header.
+
+### for Response
+
+To access and manipulate response cookies that will persist in the HTTP client,
+use the exported `ResponseCookies` constructor:
+
+```ts
+import { ResponseCookies } from '@edge-runtime/cookies'
+
+function handleRequest(req: Request) {
+  const cookieKey = 'cookie-name'
+  const headers = new Headers()
+  const responseCookies = new ResponseCookies(headers)
+
+  cookies.set('cookie-name', 'cookie-value', { maxAge: 1000 }) // make cookie persistent for 1000 seconds
+  cookies.delete('old-cookie')
+
+  return new Response(null, {
+    headers,
+    status: 200,
+  })
+}
+```
+
+#### Available methods
+
+- `get` - A method that takes a cookie `name` and returns an object with `name` and `value`. If a cookie with `name` isn't found, it returns `undefined`. If multiple cookies match, it will only return the first match.
+- `getAll` - A method that is similar to `get`, but returns a list of all the cookies with a matching `name`. If `name` is unspecified, it returns all the available cookies.
+- `set` - A method that takes an object with properties of `CookieListItem` as defined in the [W3C CookieStore API](https://wicg.github.io/cookie-store/#dictdef-cookielistitem) spec.
+- `delete` - A method that takes either a cookie `name` or a list of names. and removes the cookies matching the name(s). Returns `true` for deleted and `false` for undeleted cookies.

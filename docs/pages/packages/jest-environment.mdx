@@ -1,0 +1,39 @@
+# Edge Runtime Jest Environment
+
+The **@runtime-edge/jest-environment** package enables you to run [Jest](https://jestjs.io) tests against the Edge Runtime environment.
+
+It helps you to write tests assertion without being worried about the environment setup.
+
+## Installation
+
+```sh npm2yarn
+npm install @runtime-edge/jest-environment
+```
+
+## Usage
+
+Jest enables you to define the test environment through a [code comment](https://jestjs.io/docs/configuration#testenvironment-string) or as a [CLI option](https://jestjs.io/docs/cli#--envenvironment).
+
+For example, the following test would **pass**:
+
+```js
+// jest --env node
+// ✅ Pass
+it('should return the correct value', () => {
+  let val = eval('2 + 2')
+  expect(val).toBe(4)
+})
+```
+
+The following test would **fail** when using the Edge Runtime:
+
+```js
+// jest --env @runtime-edge/jest-environment
+// ❌ Fail
+// Error name:    "EvalError"
+// Error message: "Code generation from strings disallowed for this context"
+it('should return the correct value', () => {
+  let val = eval('2 + 2')
+  expect(val).toBe(4)
+})
+```
