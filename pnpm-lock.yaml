@@ -144,8 +144,8 @@ importers:
         specifier: workspace:*
         version: link:../vm
       '@jest/environment':
-        specifier: 29.5.0
-        version: 29.5.0
+        specifier: 29.7.0
+        version: 29.7.0
       '@jest/fake-timers':
         specifier: 29.5.0
         version: 29.5.0
@@ -163,8 +163,8 @@ importers:
   packages/jest-expect:
     dependencies:
       '@jest/environment':
-        specifier: 29.5.0
-        version: 29.5.0
+        specifier: 29.7.0
+        version: 29.7.0
       '@jest/fake-timers':
         specifier: 29.5.0
         version: 29.5.0
@@ -193,15 +193,15 @@ importers:
 
   packages/ponyfill:
     devDependencies:
-      '@runtime-edge/jest-environment':
-        specifier: workspace:*
-        version: link:../jest-environment
       '@edge-runtime/primitives':
         specifier: workspace:*
         version: link:../primitives
       '@edge-runtime/vm':
         specifier: workspace:*
         version: link:../vm
+      '@runtime-edge/jest-environment':
+        specifier: workspace:*
+        version: link:../jest-environment
       acorn:
         specifier: 8.11.2
         version: 8.11.2
@@ -244,12 +244,12 @@ importers:
       '@edge-runtime/format':
         specifier: workspace:*
         version: link:../format
-      '@runtime-edge/ponyfill':
-        specifier: workspace:*
-        version: link:../ponyfill
       '@edge-runtime/vm':
         specifier: workspace:*
         version: link:../vm
+      '@runtime-edge/ponyfill':
+        specifier: workspace:*
+        version: link:../ponyfill
       async-listen:
         specifier: 3.0.1
         version: 3.0.1
@@ -1320,16 +1320,6 @@ packages:
       - supports-color
       - ts-node
     dev: true
-
-  /@jest/environment@29.5.0:
-    resolution: {integrity: sha512-5FXw2+wD29YU1d4I2htpRX7jYnAyTRjP2CsXQdo9SAM8g3ifxWPSV0HnClSn71xwctr0U3oZIIH+dtbfmnbXVQ==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@jest/fake-timers': 29.5.0
-      '@jest/types': 29.5.0
-      '@types/node': 14.18.54
-      jest-mock: 29.5.0
-    dev: false
 
   /@jest/environment@29.7.0:
     resolution: {integrity: sha512-aQIfHDq33ExsN4jP1NWGXhxgQ/wixs60gDiKO+XVMd8Mn0NWPWgc34ZQDTb2jKaUWQ7MuwoitXAsN2XVXNMpAw==}
