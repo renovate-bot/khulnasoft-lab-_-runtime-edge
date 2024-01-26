@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -93,15 +97,15 @@ importers:
         specifier: ~8.4.31
         version: 8.4.31
       tailwindcss:
-        specifier: ~3.3.5
-        version: 3.3.5(ts-node@10.9.1)
+        specifier: ~3.4.0
+        version: 3.4.1(ts-node@10.9.1)
 
   packages/cookies:
     devDependencies:
       '@edge-runtime/format':
         specifier: workspace:*
         version: link:../format
-      '@runtime-edge/jest-environment':
+      '@edge-runtime/jest-environment':
         specifier: workspace:*
         version: link:../jest-environment
       '@types/cookie':
@@ -119,7 +123,7 @@ importers:
 
   packages/integration-tests:
     devDependencies:
-      '@runtime-edge/jest-environment':
+      '@edge-runtime/jest-environment':
         specifier: workspace:*
         version: link:../jest-environment
       '@runtime-edge/ponyfill':
@@ -144,8 +148,8 @@ importers:
         specifier: workspace:*
         version: link:../vm
       '@jest/environment':
-        specifier: 29.7.0
-        version: 29.7.0
+        specifier: 29.5.0
+        version: 29.5.0
       '@jest/fake-timers':
         specifier: 29.5.0
         version: 29.5.0
@@ -172,7 +176,7 @@ importers:
         specifier: 29.7.0
         version: 29.7.0
     devDependencies:
-      '@runtime-edge/jest-environment':
+      '@edge-runtime/jest-environment':
         specifier: workspace:*
         version: link:../jest-environment
 
@@ -193,15 +197,15 @@ importers:
 
   packages/ponyfill:
     devDependencies:
+      '@edge-runtime/jest-environment':
+        specifier: workspace:*
+        version: link:../jest-environment
       '@edge-runtime/primitives':
         specifier: workspace:*
         version: link:../primitives
       '@edge-runtime/vm':
         specifier: workspace:*
         version: link:../vm
-      '@runtime-edge/jest-environment':
-        specifier: workspace:*
-        version: link:../jest-environment
       acorn:
         specifier: 8.11.2
         version: 8.11.2
@@ -284,7 +288,7 @@ importers:
 
   packages/user-agent:
     devDependencies:
-      '@runtime-edge/jest-environment':
+      '@edge-runtime/jest-environment':
         specifier: workspace:*
         version: link:../jest-environment
       '@types/ua-parser-js':
@@ -1320,6 +1324,16 @@ packages:
       - supports-color
       - ts-node
     dev: true
+
+  /@jest/environment@29.5.0:
+    resolution: {integrity: sha512-5FXw2+wD29YU1d4I2htpRX7jYnAyTRjP2CsXQdo9SAM8g3ifxWPSV0HnClSn71xwctr0U3oZIIH+dtbfmnbXVQ==}
+    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+    dependencies:
+      '@jest/fake-timers': 29.5.0
+      '@jest/types': 29.5.0
+      '@types/node': 16.18.40
+      jest-mock: 29.5.0
+    dev: false
 
   /@jest/environment@29.7.0:
     resolution: {integrity: sha512-aQIfHDq33ExsN4jP1NWGXhxgQ/wixs60gDiKO+XVMd8Mn0NWPWgc34ZQDTb2jKaUWQ7MuwoitXAsN2XVXNMpAw==}
@@ -7700,8 +7714,8 @@ packages:
       use-sync-external-store: 1.2.0(react@18.2.0)
     dev: false
 
-  /tailwindcss@3.3.5(ts-node@10.9.1):
-    resolution: {integrity: sha512-5SEZU4J7pxZgSkv7FP1zY8i2TIAOooNZ1e/OGtxIEv6GltpoiXUqWvLy89+a10qYTB1N5Ifkuw9lqQkN9sscvA==}
+  /tailwindcss@3.4.1(ts-node@10.9.1):
+    resolution: {integrity: sha512-qAYmXRfk3ENzuPBakNK0SRrUDipP8NQnEY6772uDhflcQz5EhRdD7JNZxyrFHVQNCwULPBn6FNPp9brpO7ctcA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
