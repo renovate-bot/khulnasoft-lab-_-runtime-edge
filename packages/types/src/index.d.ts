@@ -2,7 +2,7 @@
 
 /// <reference lib="ES2019" />
 
-import * as Edge from '@edge-runtime/primitives'
+import * as Edge from '@runtime-edge/primitives'
 
 declare global {
   function addEventListener(

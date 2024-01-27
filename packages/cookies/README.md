@@ -4,8 +4,8 @@
   <img src="https://user-images.githubusercontent.com/2096101/235127419-ac6fe609-d0cd-4339-a593-c48305a83823.png#gh-light-mode-only">
   <br>
   <br>
-  <p align="center"><strong>@edge-runtime/cookies</strong>: An Edge Runtime compatible cookie helpers.</p>
-  <p align="center">See <a href="https://edge-runtime.vercel.app/packages/jest-environment" target='_blank' rel='noopener noreferrer'>@edge-runtime/cookies</a> section in our <a href="https://edge-runtime.vercel.app/" target='_blank' rel='noopener noreferrer'>website</a> for more information.</p>
+  <p align="center"><strong>@runtime-edge/cookies</strong>: An Edge Runtime compatible cookie helpers.</p>
+  <p align="center">See <a href="https://edge-runtime.vercel.app/packages/jest-environment" target='_blank' rel='noopener noreferrer'>@runtime-edge/cookies</a> section in our <a href="https://edge-runtime.vercel.app/" target='_blank' rel='noopener noreferrer'>website</a> for more information.</p>
   <br>
 </div>
 
@@ -14,24 +14,24 @@
 Using npm:
 
 ```sh
-npm install @edge-runtime/cookies --save
+npm install @runtime-edge/cookies --save
 ```
 
 or using yarn:
 
 ```sh
-yarn add @edge-runtime/cookies --dev
+yarn add @runtime-edge/cookies --dev
 ```
 
 or using pnpm:
 
 ```sh
-pnpm install @edge-runtime/cookies --save
+pnpm install @runtime-edge/cookies --save
 ```
 
 ## License
 
-**@edge-runtime/cookies** © [Vercel](https://vercel.com), released under the [MPLv2](https://github.com/khulnasoft/runtime-edge/blob/main/LICENSE.md) License.<br>
+**@runtime-edge/cookies** © [Vercel](https://vercel.com), released under the [MPLv2](https://github.com/khulnasoft/runtime-edge/blob/main/LICENSE.md) License.<br>
 Authored and maintained by [Vercel](https://vercel.com) with help from [contributors](https://github.com/khulnasoft/runtime-edge/contributors).
 
 > [vercel.com](https://vercel.com) · GitHub [Vercel](https://github.com/vercel) · Twitter [@vercel](https://twitter.com/vercel)

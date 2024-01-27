@@ -18,7 +18,7 @@ This package includes built-in TypeScript support.
 
 ### as module
 
-The **edge-runtime** package is on top of [@edge-runtime/vm](/packages/vm), extending it with [EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget) API support for handling fetch events.
+The **edge-runtime** package is on top of [@runtime-edge/vm](/packages/vm), extending it with [EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget) API support for handling fetch events.
 
 ```js
 import { EdgeRuntime } from 'runtime-edge'
@@ -65,7 +65,7 @@ It creates a new Edge Runtime instance.
 
 #### options
 
-Any option provided will be passed against **@edge-runtime/vm**.
+Any option provided will be passed against **@runtime-edge/vm**.
 
 Additionally, you can provide:
 
@@ -75,7 +75,7 @@ Some initial code to be evaluated as the VM for the runtime is created.
 
 #### methods
 
-It inherits from **@edge-runtime/vm**, plus:
+It inherits from **@runtime-edge/vm**, plus:
 
 ##### VercelRuntime: string
 

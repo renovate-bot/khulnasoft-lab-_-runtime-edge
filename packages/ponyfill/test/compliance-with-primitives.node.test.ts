@@ -2,7 +2,7 @@ import { parse } from 'acorn-loose'
 import { createRequire } from './create-require'
 import { promises as fs } from 'fs'
 import { simple } from 'acorn-walk'
-import { EdgeVM } from '@edge-runtime/vm'
+import { EdgeVM } from '@runtime-edge/vm'
 
 test('exports all primitives in Edge Runtime', async () => {
   const exportedNames = await getExportedNames()
@@ -54,7 +54,7 @@ test('exports all primitives in Node.js', async () => {
 })
 
 async function getExportedNames() {
-  const typesPath = require.resolve('@edge-runtime/primitives/types/index.d.ts')
+  const typesPath = require.resolve('@runtime-edge/primitives/types/index.d.ts')
   const typesContents = await fs.readFile(typesPath, 'utf8')
   const ast = parse(typesContents, { ecmaVersion: 'latest' })
   const exportedNames: string[] = []

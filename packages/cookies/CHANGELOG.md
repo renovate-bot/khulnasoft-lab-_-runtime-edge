@@ -1,4 +1,4 @@
-# @edge-runtime/cookies
+# @runtime-edge/cookies
 
 ## 4.0.2
 

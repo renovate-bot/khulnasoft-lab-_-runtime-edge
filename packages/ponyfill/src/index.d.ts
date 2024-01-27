@@ -1,1 +1,1 @@
-export * from '@edge-runtime/primitives'
+export * from '@runtime-edge/primitives'

@@ -1,6 +1,6 @@
 /**
  * Load all the modules in the correct order.
- * This is just like the entrypoint (`@edge-runtime/primitives`), only
+ * This is just like the entrypoint (`@runtime-edge/primitives`), only
  * lazy.
  *
  * @param scopedContext a record of values that will be available to
@@ -9,7 +9,7 @@
  *
  * @example
  * ```ts
- * import { load } from '@edge-runtime/primitives/load'
+ * import { load } from '@runtime-edge/primitives/load'
  *
  * const { crypto, fetch, Request, Headers } = load({
  *   Uint8Array: MyCustomUint8Array,

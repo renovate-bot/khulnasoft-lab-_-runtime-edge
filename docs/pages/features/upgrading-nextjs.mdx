@@ -4,7 +4,7 @@
 
 If you want to upgrade the Edge Runtime version there, follow the steps:
 
-- Find for `"runtime-edge"` and `"@edge-runtime"` versions inside `"package.json"` files.
+- Find for `"runtime-edge"` and `"@runtime-edge"` versions inside `"package.json"` files.
 - Upgrade the version numbers to the latest version available (You can find [npm semver calculator](https://semver.npmjs.com/) helpful to determine what's the latest version).
 - Perform a `pnpm install` on the root folder to install them but also update `'pnpm-lock.yaml'` properly.
 - Once the new version has been installed, you should to precompile them, entering to `packages/next` and executing `npm run ncc-compiled`.

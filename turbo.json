@@ -11,7 +11,7 @@
       "dependsOn": ["^build"],
       "outputs": ["src/version.ts"]
     },
-    "@edge-runtime/primitives#build": {
+    "@runtime-edge/primitives#build": {
       "dependsOn": ["^build"],
       "outputs": [
         "abort-controller/**",

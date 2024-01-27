@@ -1,13 +1,13 @@
 # Edge Runtime VM
 
-The **@edge-runtime/vm** package is the low level bindings for creating Web Standard isolated VM contexts under the same [Vercel Edge Functions](https://vercel.com/edge) conditions.
+The **@runtime-edge/vm** package is the low level bindings for creating Web Standard isolated VM contexts under the same [Vercel Edge Functions](https://vercel.com/edge) conditions.
 
 It has been designed to simulate Edge conditions locally in your machine.
 
 ## Installation
 
 ```sh npm2yarn
-npm install @edge-runtime/vm
+npm install @runtime-edge/vm
 ```
 
 This package includes built-in TypeScript support.
@@ -17,7 +17,7 @@ This package includes built-in TypeScript support.
 You can evaluate arbitrary code isolated inside a VM context, getting output back from the output:
 
 ```js
-import { EdgeVM } from '@edge-runtime/vm'
+import { EdgeVM } from '@runtime-edge/vm'
 
 const edgeVM = new EdgeVM()
 const promise = edgeVM.evaluate("fetch('https://edge-ping.vercel.app')")
@@ -26,7 +26,7 @@ const { url, status } = await promise
 console.log(`ping to ${url} returned ${status}`)
 ```
 
-The **@edge-runtime/vm** has [@edge-runtime/primitives](/packages/primitives) preloaded.
+The **@runtime-edge/vm** has [@runtime-edge/primitives](/packages/primitives) preloaded.
 
 In case you need, you can extend the VM context:
 

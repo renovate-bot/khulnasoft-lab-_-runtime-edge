@@ -24,7 +24,7 @@
     "web"
   ],
   "dependencies": {
-    "@edge-runtime/primitives": "workspace:*"
+    "@runtime-edge/primitives": "workspace:*"
   },
   "engines": {
     "node": ">=16"

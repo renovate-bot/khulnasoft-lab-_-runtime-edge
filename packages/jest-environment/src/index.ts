@@ -1,6 +1,6 @@
 import type { Config, Global } from '@jest/types'
 import type { JestEnvironment } from '@jest/environment'
-import { EdgeVM } from '@edge-runtime/vm'
+import { EdgeVM } from '@runtime-edge/vm'
 import { installCommonGlobals } from 'jest-util'
 import { LegacyFakeTimers, ModernFakeTimers } from '@jest/fake-timers'
 import { ModuleMocker } from 'jest-mock'

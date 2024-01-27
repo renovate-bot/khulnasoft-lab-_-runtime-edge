@@ -1,6 +1,6 @@
 # Edge Runtime Cookies
 
-The **@edge-runtime/cookies** package provides high-level HTTP Cookie
+The **@runtime-edge/cookies** package provides high-level HTTP Cookie
 abstractions for Edge-compatible environments, such as Edge Runtime or Vercel
 Edge Functions and Edge Middleware.
 
@@ -10,7 +10,7 @@ The main difference is that the methods are not asynchronous so they do not retu
 ## Installation
 
 ```sh npm2yarn
-npm install @edge-runtime/cookies
+npm install @runtime-edge/cookies
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ npm install @edge-runtime/cookies
 To access and manipulate request cookies, use the exported `RequestCookies` constructor:
 
 ```ts
-import { RequestCookies } from '@edge-runtime/cookies'
+import { RequestCookies } from '@runtime-edge/cookies'
 
 function handleRequest(req: Request) {
   const cookies = new RequestCookies(req.headers)
@@ -53,7 +53,7 @@ To access and manipulate response cookies that will persist in the HTTP client,
 use the exported `ResponseCookies` constructor:
 
 ```ts
-import { ResponseCookies } from '@edge-runtime/cookies'
+import { ResponseCookies } from '@runtime-edge/cookies'
 
 function handleRequest(req: Request) {
   const cookieKey = 'cookie-name'

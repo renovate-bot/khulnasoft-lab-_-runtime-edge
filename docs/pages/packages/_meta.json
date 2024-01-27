@@ -1,13 +1,13 @@
 {
-  "cookies": "@edge-runtime/cookies",
+  "cookies": "@runtime-edge/cookies",
   "format": "@edge-runtime/format",
   "jest-environment": "@runtime-edge/jest-environment",
   "jest-expect": "@runtime-edge/jest-expect",
   "node-utils": "@runtime-edge/node-utils",
   "ponyfill": "@runtime-edge/ponyfill",
-  "primitives": "@edge-runtime/primitives",
+  "primitives": "@runtime-edge/primitives",
   "runtime": "runtime-edge",
   "types": "@runtime-edge/types",
   "user-agent": "@runtime-edge/user-agent",
-  "vm": "@edge-runtime/vm"
+  "vm": "@runtime-edge/vm"
 }

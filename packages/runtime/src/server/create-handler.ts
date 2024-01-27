@@ -1,7 +1,7 @@
 import type { EdgeRuntime } from '../edge-runtime'
 import type { IncomingMessage, ServerResponse } from 'http'
 import type { Logger, NodeHeaders } from '../types'
-import type { EdgeContext } from '@edge-runtime/vm'
+import type { EdgeContext } from '@runtime-edge/vm'
 import { getClonableBodyStream, pipeBodyStreamToResponse } from './body-streams'
 import prettyMs from 'pretty-ms'
 import timeSpan from 'time-span'
