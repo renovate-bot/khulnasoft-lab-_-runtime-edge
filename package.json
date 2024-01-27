@@ -2,6 +2,28 @@
   "name": "@runtime-edge/root",
   "homepage": "https://github.com/khulnasoft/runtime-edge#readme",
   "version": "0.0.0",
+  "contributors": [
+    {
+      "name": "NxPKG js",
+      "email": "iconmamundentist@gmail.com"
+    },
+    {
+      "name": "gitworkflows",
+      "email": "118260833+gitworkflows@users.noreply.github.com"
+    },
+    {
+      "name": "NxPKG",
+      "email": "116948796+NxPKG@users.noreply.github.com"
+    },
+    {
+      "name": "DevSecCon",
+      "email": "149763747+DevSecCon@users.noreply.github.com"
+    },
+    {
+      "name": "Md Sulaiman",
+      "email": "51925710+sulaiman-coder@users.noreply.github.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/khulnasoft/runtime-edge.git"
