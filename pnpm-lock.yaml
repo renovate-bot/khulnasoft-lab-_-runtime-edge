@@ -102,7 +102,7 @@ importers:
 
   packages/cookies:
     devDependencies:
-      '@edge-runtime/format':
+      '@runtime-edge/format':
         specifier: workspace:*
         version: link:../format
       '@runtime-edge/jest-environment':
@@ -222,7 +222,7 @@ importers:
 
   packages/primitives:
     devDependencies:
-      '@edge-runtime/format':
+      '@runtime-edge/format':
         specifier: workspace:*
         version: link:../format
       '@ungap/structured-clone':
@@ -249,7 +249,7 @@ importers:
 
   packages/runtime:
     dependencies:
-      '@edge-runtime/format':
+      '@runtime-edge/format':
         specifier: workspace:*
         version: link:../format
       '@runtime-edge/vm':
