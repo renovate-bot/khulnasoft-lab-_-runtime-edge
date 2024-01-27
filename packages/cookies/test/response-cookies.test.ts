@@ -1,4 +1,4 @@
-import { createFormat } from '@edge-runtime/format'
+import { createFormat } from '@runtime-edge/format'
 import { ResponseCookies } from '../src/response-cookies'
 
 test('reflect .set into `set-cookie`', async () => {
@@ -216,7 +216,7 @@ test('cookies.toString()', () => {
   expect(cookies.toString()).toMatch('foo=bar; Path=/test; fooz=barz; Path=/')
 })
 
-test('formatting with @edge-runtime/format', () => {
+test('formatting with @runtime-edge/format', () => {
   const headers = new Headers()
   const cookies = new ResponseCookies(headers)
   cookies.set('a', '1', { httpOnly: true })

@@ -61,7 +61,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`7cc92cc`](https://github.com/khulnasoft/runtime-edge/commit/7cc92ccd190c2d96483202d9f2e1a523778d1f48)]:
-  - @edge-runtime/format@2.2.0
+  - @runtime-edge/format@2.2.0
   - @runtime-edge/vm@3.1.0
 
 ## 2.4.5
@@ -138,7 +138,7 @@
 
 - Updated dependencies [[`a9054f7`](https://github.com/khulnasoft/runtime-edge/commit/a9054f72032c0a164052f18150e80f97a82d2c13), [`9f35416`](https://github.com/khulnasoft/runtime-edge/commit/9f35416aaf224877ca42e089f9e8452cab3ba41d), [`a594675`](https://github.com/khulnasoft/runtime-edge/commit/a594675e695264e0325c2ae511b38bdc015a436d), [`ed225b3`](https://github.com/khulnasoft/runtime-edge/commit/ed225b37ec2fa47ab5ce6496746dc285fc8925a6)]:
   - @runtime-edge/vm@3.0.0
-  - @edge-runtime/format@2.1.0
+  - @runtime-edge/format@2.1.0
 
 ## 2.3.0-beta.14
 
@@ -249,7 +249,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`ed225b3`](https://github.com/khulnasoft/runtime-edge/commit/ed225b37ec2fa47ab5ce6496746dc285fc8925a6)]:
-  - @edge-runtime/format@2.1.0-beta.0
+  - @runtime-edge/format@2.1.0-beta.0
   - @runtime-edge/vm@2.2.0-beta.0
 
 ## 2.2.0
@@ -277,7 +277,7 @@
 - Use valid SPDX license expression ([#276](https://github.com/khulnasoft/runtime-edge/pull/276))
 
 - Updated dependencies [[`36bce62`](https://github.com/khulnasoft/runtime-edge/commit/36bce62f366ee630ec87f7f542276980a6e9d974)]:
-  - @edge-runtime/format@2.0.1
+  - @runtime-edge/format@2.0.1
   - @runtime-edge/vm@2.1.2
 
 ## 2.1.1
@@ -325,7 +325,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`345cdf1`](https://github.com/khulnasoft/runtime-edge/commit/345cdf19dfdf916af615489a576e28592b3fae5f), [`90b1e6f`](https://github.com/khulnasoft/runtime-edge/commit/90b1e6f982683cdc1a957dfe66bac29cbfc64925)]:
-  - @edge-runtime/format@2.0.0
+  - @runtime-edge/format@2.0.0
   - @runtime-edge/vm@2.0.3
 
 ## 2.0.2
@@ -374,7 +374,7 @@
 - Fix `unhandledrejection` handler parameters ([#151](https://github.com/khulnasoft/runtime-edge/pull/151))
 
 - Updated dependencies [[`bf759ab`](https://github.com/khulnasoft/runtime-edge/commit/bf759abafebf8cc75e2b1283a5cce2394e226ee8), [`05bb2ac`](https://github.com/khulnasoft/runtime-edge/commit/05bb2ac30aef9849e0adf7337569459f52edd36b), [`83883c2`](https://github.com/khulnasoft/runtime-edge/commit/83883c24d8caaa78a5165e60f5e5718047bee2ae), [`8664c75`](https://github.com/khulnasoft/runtime-edge/commit/8664c757be0e78257e33a724e786f7aabccbf052), [`3207fa2`](https://github.com/khulnasoft/runtime-edge/commit/3207fa224783fecc70ac63aef4cd49a8404ecbc0), [`37e7901`](https://github.com/khulnasoft/runtime-edge/commit/37e790188ae27375bdd3a1d2795babd2432038a0)]:
-  - @edge-runtime/format@1.1.0
+  - @runtime-edge/format@1.1.0
   - @runtime-edge/vm@1.1.0
 
 ## 1.1.0-beta.40
@@ -389,7 +389,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`bf759ab`](https://github.com/khulnasoft/runtime-edge/commit/bf759abafebf8cc75e2b1283a5cce2394e226ee8)]:
-  - @edge-runtime/format@1.1.0-beta.34
+  - @runtime-edge/format@1.1.0-beta.34
 
 ## 1.1.0-beta.38
 
@@ -436,7 +436,7 @@
 - upgrading undici ([`3207fa2`](https://github.com/khulnasoft/runtime-edge/commit/3207fa224783fecc70ac63aef4cd49a8404ecbc0))
 
 - Updated dependencies [[`3207fa2`](https://github.com/khulnasoft/runtime-edge/commit/3207fa224783fecc70ac63aef4cd49a8404ecbc0)]:
-  - @edge-runtime/format@1.1.0-beta.33
+  - @runtime-edge/format@1.1.0-beta.33
   - @runtime-edge/vm@1.1.0-beta.33
 
 ## 1.1.0-beta.32
@@ -446,5 +446,5 @@
 - Change release method to Changesets ([#110](https://github.com/khulnasoft/runtime-edge/pull/110))
 
 - Updated dependencies [[`05bb2ac`](https://github.com/khulnasoft/runtime-edge/commit/05bb2ac30aef9849e0adf7337569459f52edd36b)]:
-  - @edge-runtime/format@1.1.0-beta.32
+  - @runtime-edge/format@1.1.0-beta.32
   - @runtime-edge/vm@1.1.0-beta.32

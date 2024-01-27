@@ -23,7 +23,7 @@
     "web"
   ],
   "devDependencies": {
-    "@edge-runtime/format": "workspace:*",
+    "@runtime-edge/format": "workspace:*",
     "@ungap/structured-clone": "1.2.0",
     "blob-polyfill": "7.0.20220408",
     "esbuild-plugin-alias": "latest",

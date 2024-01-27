@@ -1,13 +1,13 @@
 # Edge Runtime Format
 
-The **@edge-runtime/format** package receives any JavaScript primitive or Object as input, returning the beauty string representation as output.
+The **@runtime-edge/format** package receives any JavaScript primitive or Object as input, returning the beauty string representation as output.
 
 It follows the [formatter spec](https://console.spec.whatwg.org/#formatter) and can be used as drop-in replacement for [util.inspect](https://nodejs.org/api/util.html#utilinspectobject-options).
 
 ## Installation
 
 ```sh npm2yarn
-npm install @edge-runtime/format
+npm install @runtime-edge/format
 ```
 
 This package includes built-in TypeScript support.
@@ -17,7 +17,7 @@ This package includes built-in TypeScript support.
 First, call `createFormat` method for initialize your formatter:
 
 ```js
-import { createFormat } from '@edge-runtime/format'
+import { createFormat } from '@runtime-edge/format'
 const format = createFormat()
 ```
 

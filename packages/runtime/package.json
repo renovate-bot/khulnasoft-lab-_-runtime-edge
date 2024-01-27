@@ -24,7 +24,7 @@
     "web"
   ],
   "dependencies": {
-    "@edge-runtime/format": "workspace:*",
+    "@runtime-edge/format": "workspace:*",
     "@runtime-edge/ponyfill": "workspace:*",
     "@runtime-edge/vm": "workspace:*",
     "async-listen": "3.0.1",

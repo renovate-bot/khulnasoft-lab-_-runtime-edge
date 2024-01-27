@@ -1,4 +1,4 @@
-import { createFormat } from '@edge-runtime/format'
+import { createFormat } from '@runtime-edge/format'
 
 const format = createFormat()
 const bareError = console.error.bind(console)

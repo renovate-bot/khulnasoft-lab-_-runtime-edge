@@ -1,4 +1,4 @@
-import { createFormat } from '@edge-runtime/format'
+import { createFormat } from '@runtime-edge/format'
 import createRepl from 'repl'
 import { homedir } from 'os'
 import { join } from 'path'

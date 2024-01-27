@@ -1,5 +1,5 @@
 import { RequestCookies } from '../src/request-cookies'
-import { createFormat } from '@edge-runtime/format'
+import { createFormat } from '@runtime-edge/format'
 import { parseCookie } from '../src/serialize'
 
 describe('input parsing', () => {
@@ -83,7 +83,7 @@ test('cookies.toString()', () => {
   expect(cookies.toString()).toMatch('a=1; b=2; c=3')
 })
 
-test('formatting with @edge-runtime/format', () => {
+test('formatting with @runtime-edge/format', () => {
   const headers = requestHeadersWithCookies('a=1; b=2')
   const cookies = new RequestCookies(headers)
 

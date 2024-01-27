@@ -1,6 +1,6 @@
 {
   "cookies": "@runtime-edge/cookies",
-  "format": "@edge-runtime/format",
+  "format": "@runtime-edge/format",
   "jest-environment": "@runtime-edge/jest-environment",
   "jest-expect": "@runtime-edge/jest-expect",
   "node-utils": "@runtime-edge/node-utils",

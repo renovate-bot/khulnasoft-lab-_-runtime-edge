@@ -1,4 +1,4 @@
-import { createFormat } from '@edge-runtime/format'
+import { createFormat } from '@runtime-edge/format'
 import type { Logger, LoggerOptions } from '../types'
 import type { Formatter } from 'picocolors/types'
 import pico from 'picocolors'
