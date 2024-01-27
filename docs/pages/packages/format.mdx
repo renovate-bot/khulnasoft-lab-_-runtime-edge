@@ -50,7 +50,7 @@ format('The PI number is %i', Math.PI, '(rounded)')
 In case you need to hide implementation details or want to customize how something should be printed, you can use the `customInspectSymbol` option for that:
 
 ```js
-const customInspectSymbol = Symbol.for('edge-runtime.inspect.custom')
+const customInspectSymbol = Symbol.for('runtime-edge.inspect.custom')
 
 class Password {
   constructor(value) {
@@ -94,4 +94,4 @@ The default behavior is `error.toString()`.
 
 It sets the symbol to be used for printing custom behavior.
 
-The default value is `edge-runtime.inspect.custom`.
+The default value is `runtime-edge.inspect.custom`.

@@ -1,6 +1,6 @@
 # Runtime Edge
 
-The **edge-runtime** package is a high-level, ready to use, general purpose way to run [Vercel Edge Functions](https://vercel.com/edge).
+The **runtime-edge** package is a high-level, ready to use, general purpose way to run [Vercel Edge Functions](https://vercel.com/edge).
 
 It runs under the same condition than production environment, but locally in your machine.
 
@@ -9,7 +9,7 @@ Under the hood, this package is orchestrating the use of the rest of the package
 ## Installation
 
 ```sh npm2yarn
-npm install edge-runtime
+npm install runtime-edge
 ```
 
 This package includes built-in TypeScript support.
@@ -18,7 +18,7 @@ This package includes built-in TypeScript support.
 
 ### as module
 
-The **edge-runtime** package is on top of [@runtime-edge/vm](/packages/vm), extending it with [EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget) API support for handling fetch events.
+The **runtime-edge** package is on top of [@runtime-edge/vm](/packages/vm), extending it with [EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget) API support for handling fetch events.
 
 ```js
 import { EdgeRuntime } from 'runtime-edge'

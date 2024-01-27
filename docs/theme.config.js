@@ -63,11 +63,11 @@ const theme = {
         <meta name='og:description' content={frontMatter.description} />
         <meta
           property='og:url'
-          content={`https://edge-runtime.vercel.app${router.asPath}`}
+          content={`https://runtime-edge.vercel.app${router.asPath}`}
         />
         <meta
           property='og:image'
-          content={`https://edge-runtime.vercel.app${
+          content={`https://runtime-edge.vercel.app${
             frontMatter.ogImage ?? '/og-image.png'
           }`}
         />
