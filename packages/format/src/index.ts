@@ -39,7 +39,7 @@ interface FormatterOptions {
 
 export function createFormat(opts: FormatterOptions = {}) {
   if (opts.customInspectSymbol === undefined) {
-    opts.customInspectSymbol = Symbol.for('edge-runtime.inspect.custom')
+    opts.customInspectSymbol = Symbol.for('runtime-edge.inspect.custom')
   }
 
   if (opts.formatError === undefined) {

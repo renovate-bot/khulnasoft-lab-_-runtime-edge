@@ -5,7 +5,7 @@
   <br>
   <br>
   <p align="center"><strong>@runtime-edge/jest-expect</strong>: Custom matchers for Jest's expect to help test Request/Response instances.</p>
-  <p align="center">See <a href="https://edge-runtime.vercel.app/packages/jest-expect" target='_blank' rel='noopener noreferrer'>@runtime-edge/jest-expect</a> section in our <a href="https://edge-runtime.vercel.app/" target='_blank' rel='noopener noreferrer'>website</a> for more information.</p>
+  <p align="center">See <a href="https://runtime-edge.vercel.app/packages/jest-expect" target='_blank' rel='noopener noreferrer'>@runtime-edge/jest-expect</a> section in our <a href="https://runtime-edge.vercel.app/" target='_blank' rel='noopener noreferrer'>website</a> for more information.</p>
   <br>
 </div>
 

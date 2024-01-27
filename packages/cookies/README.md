@@ -4,8 +4,8 @@
   <img src="https://user-images.githubusercontent.com/2096101/235127419-ac6fe609-d0cd-4339-a593-c48305a83823.png#gh-light-mode-only">
   <br>
   <br>
-  <p align="center"><strong>@runtime-edge/cookies</strong>: An Edge Runtime compatible cookie helpers.</p>
-  <p align="center">See <a href="https://edge-runtime.vercel.app/packages/jest-environment" target='_blank' rel='noopener noreferrer'>@runtime-edge/cookies</a> section in our <a href="https://edge-runtime.vercel.app/" target='_blank' rel='noopener noreferrer'>website</a> for more information.</p>
+  <p align="center"><strong>@runtime-edge/cookies</strong>: An Runtime Edge compatible cookie helpers.</p>
+  <p align="center">See <a href="https://runtime-edge.vercel.app/packages/jest-environment" target='_blank' rel='noopener noreferrer'>@runtime-edge/cookies</a> section in our <a href="https://runtime-edge.vercel.app/" target='_blank' rel='noopener noreferrer'>website</a> for more information.</p>
   <br>
 </div>
 

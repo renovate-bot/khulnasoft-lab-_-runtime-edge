@@ -87,12 +87,12 @@ export type JSONBodyParams = [body: JSONType]
 interface SharedMatchers<R = unknown> {
   /**
    * @see
-   * [@runtime-edge/jest-environment#toHaveJSONBody](https://edge-runtime.vercel.app/packages/jest-environment#tohavejsonbody)
+   * [@runtime-edge/jest-environment#toHaveJSONBody](https://runtime-edge.vercel.app/packages/jest-environment#tohavejsonbody)
    */
   toHaveJSONBody(...args: JSONBodyParams): R
   /**
    * @see
-   * [@runtime-edge/jest-environment#toHaveTextBody](https://edge-runtime.vercel.app/packages/jest-environment#tohavetextbody)
+   * [@runtime-edge/jest-environment#toHaveTextBody](https://runtime-edge.vercel.app/packages/jest-environment#tohavetextbody)
    */
   toHaveTextBody(body: string): R
 }
@@ -108,7 +108,7 @@ export interface ResponseMatchers<R = unknown> extends SharedMatchers<R> {
    * expect(new Response("Internal Server Error"), {status: 500}).toHaveStatus("Server Error")
    * expect(new Response("OK")).not.toHaveStatus(201)
    * @see
-   * [@runtime-edge/jest-environment#toHaveStatus](https://edge-runtime.vercel.app/packages/jest-environment#tohavestatus)
+   * [@runtime-edge/jest-environment#toHaveStatus](https://runtime-edge.vercel.app/packages/jest-environment#tohavestatus)
    */
   toHaveStatus(...args: StatusParams): R
 }

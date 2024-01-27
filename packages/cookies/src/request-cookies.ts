@@ -98,7 +98,7 @@ export class RequestCookies {
   /**
    * Format the cookies in the request as a string for logging
    */
-  [Symbol.for('edge-runtime.inspect.custom')]() {
+  [Symbol.for('runtime-edge.inspect.custom')]() {
     return `RequestCookies ${JSON.stringify(Object.fromEntries(this._parsed))}`
   }
 

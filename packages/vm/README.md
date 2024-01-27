@@ -5,7 +5,7 @@
   <br>
   <br>
   <p align="center"><strong>@runtime-edge/vm</strong>: Low level bindings for creating Web Standard contexts.</p>
-  <p align="center">See <a href="https://edge-runtime.vercel.app/packages/vm" target='_blank' rel='noopener noreferrer'>@runtime-edge/vm</a> section in our <a href="https://edge-runtime.vercel.app/" target='_blank' rel='noopener noreferrer'>website</a> for more information.</p>
+  <p align="center">See <a href="https://runtime-edge.vercel.app/packages/vm" target='_blank' rel='noopener noreferrer'>@runtime-edge/vm</a> section in our <a href="https://runtime-edge.vercel.app/" target='_blank' rel='noopener noreferrer'>website</a> for more information.</p>
   <br>
 </div>
 

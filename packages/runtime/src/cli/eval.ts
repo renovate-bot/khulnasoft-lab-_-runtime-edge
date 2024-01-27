@@ -1,4 +1,4 @@
-import { EdgeRuntime } from '../edge-runtime'
+import { EdgeRuntime } from '../runtime-edge'
 
 export const inlineEval = async (script: string) => {
   const runtime = new EdgeRuntime()

@@ -1,7 +1,7 @@
 {
   "name": "runtime-edge",
   "description": "Run any Edge Function from CLI or Node.js module.",
-  "homepage": "https://edge-runtime.vercel.app/packages/runtime",
+  "homepage": "https://runtime-edge.vercel.app/packages/runtime",
   "version": "2.5.7",
   "main": "dist/index.js",
   "bin": {

@@ -1,4 +1,4 @@
-import type { EdgeRuntime } from '../edge-runtime'
+import type { EdgeRuntime } from '../runtime-edge'
 import type { IncomingMessage, ServerResponse } from 'http'
 import type { Logger, NodeHeaders } from '../types'
 import type { EdgeContext } from '@runtime-edge/vm'

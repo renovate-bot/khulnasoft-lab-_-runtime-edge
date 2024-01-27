@@ -1,7 +1,7 @@
 {
   "name": "@runtime-edge/ponyfill",
-  "description": "A ponyfill (doesn't overwrite the native methods) to use Edge Runtime APIs in any environment.",
-  "homepage": "https://edge-runtime.vercel.app/packages/ponyfill",
+  "description": "A ponyfill (doesn't overwrite the native methods) to use Runtime Edge APIs in any environment.",
+  "homepage": "https://runtime-edge.vercel.app/packages/ponyfill",
   "version": "2.4.1",
   "main": "src/index.js",
   "module": "dist/index.mjs",

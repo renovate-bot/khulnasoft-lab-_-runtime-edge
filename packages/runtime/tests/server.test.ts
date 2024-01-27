@@ -1,4 +1,4 @@
-import { EdgeRuntime } from '../src/edge-runtime'
+import { EdgeRuntime } from '../src/runtime-edge'
 import { runServer } from '../src/server'
 import fetch from 'node-fetch'
 import type { Readable } from 'stream'

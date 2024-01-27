@@ -138,11 +138,11 @@ testOrSkip('sets header calling Headers constructor', async () => {
   })
   const serverUrl = await listen(server)
   const response = await fetch(serverUrl, {
-    headers: new Headers({ 'user-agent': 'vercel/edge-runtime' }),
+    headers: new Headers({ 'user-agent': 'vercel/runtime-edge' }),
   })
   expect(response.status).toBe(200)
   const text = await response.text()
-  expect(text).toBe('vercel/edge-runtime')
+  expect(text).toBe('vercel/runtime-edge')
 })
 ;(globalThis.EdgeRuntime !== undefined ? testOrSkip : test.skip)(
   'sets headers unsupported in undici',

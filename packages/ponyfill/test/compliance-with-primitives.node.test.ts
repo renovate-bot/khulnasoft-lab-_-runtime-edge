@@ -4,7 +4,7 @@ import { promises as fs } from 'fs'
 import { simple } from 'acorn-walk'
 import { EdgeVM } from '@runtime-edge/vm'
 
-test('exports all primitives in Edge Runtime', async () => {
+test('exports all primitives in Runtime Edge', async () => {
   const exportedNames = await getExportedNames()
 
   const anyObject = exportedNames.reduce(

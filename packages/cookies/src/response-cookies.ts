@@ -94,7 +94,7 @@ export class ResponseCookies {
     return this.set({ name, path, domain, value: '', expires: new Date(0) })
   }
 
-  [Symbol.for('edge-runtime.inspect.custom')]() {
+  [Symbol.for('runtime-edge.inspect.custom')]() {
     return `ResponseCookies ${JSON.stringify(Object.fromEntries(this._parsed))}`
   }
 

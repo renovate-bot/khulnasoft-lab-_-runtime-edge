@@ -1,7 +1,7 @@
 {
   "name": "@runtime-edge/jest-expect",
   "description": "Custom matchers for Jest's expect to help test Request/Response instances",
-  "homepage": "https://edge-runtime.vercel.app/packages/jest-expect",
+  "homepage": "https://runtime-edge.vercel.app/packages/jest-expect",
   "version": "1.2.0",
   "main": "dist/index.js",
   "repository": {

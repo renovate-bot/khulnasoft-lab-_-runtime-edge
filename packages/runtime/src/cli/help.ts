@@ -10,7 +10,7 @@ const flags: HelpOptions = {
 }
 
 export const help = () => `
-  edge-runtime ${dim('[<flags>] [input]')}
+  runtime-edge ${dim('[<flags>] [input]')}
 
   ${dim('Flags:')}
 

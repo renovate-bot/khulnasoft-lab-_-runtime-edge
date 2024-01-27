@@ -16,7 +16,7 @@ export interface EdgeVMOptions<T extends EdgeContext> {
    */
   extend?: (context: EdgeContext) => EdgeContext & T
   /**
-   * Code to be evaluated as when the Edge Runtime is created. This is handy
+   * Code to be evaluated as when the Runtime Edge is created. This is handy
    * to run code directly instead of first creating the runtime and then
    * evaluating.
    */

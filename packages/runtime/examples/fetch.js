@@ -44,11 +44,11 @@ async function fetchRequest(url) {
 
   const banners = [
     appendMarquee(
-      'Served by Edge Runtime, check: https://github.com/khulnasoft/runtime-edge.',
+      'Served by Runtime Edge, check: https://github.com/khulnasoft/runtime-edge.',
       '#111',
     ),
     appendMarquee(
-      'Breaking news Next.js is powered by Edge Runtime. fetch is here. Polyfills are the lesser evil. ',
+      'Breaking news Next.js is powered by Runtime Edge. fetch is here. Polyfills are the lesser evil. ',
       '#333',
     ),
     appendMarquee(

@@ -3,7 +3,7 @@ import createRepl from 'repl'
 import { homedir } from 'os'
 import { join } from 'path'
 
-import { EdgeRuntime } from '../edge-runtime'
+import { EdgeRuntime } from '../runtime-edge'
 
 const format = createFormat()
 

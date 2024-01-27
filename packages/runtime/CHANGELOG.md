@@ -1,4 +1,4 @@
-# edge-runtime
+# runtime-edge
 
 ## 2.5.7
 
@@ -268,7 +268,7 @@
 
 ### Patch Changes
 
-- refactor(edge-runtime): accepts listen options ([#304](https://github.com/khulnasoft/runtime-edge/pull/304))
+- refactor(runtime-edge): accepts listen options ([#304](https://github.com/khulnasoft/runtime-edge/pull/304))
 
 ## 2.1.2
 

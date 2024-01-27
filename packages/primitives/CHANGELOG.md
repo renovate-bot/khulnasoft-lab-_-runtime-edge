@@ -276,7 +276,7 @@
 
 - build(deps-dev): bump undici from 5.10.0 to 5.11.0 ([#156](https://github.com/khulnasoft/runtime-edge/pull/156))
 
-- Mark the createCaches export as nullable as it does not exist in Edge Runtime ([#124](https://github.com/khulnasoft/runtime-edge/pull/124))
+- Mark the createCaches export as nullable as it does not exist in Runtime Edge ([#124](https://github.com/khulnasoft/runtime-edge/pull/124))
 
 ## 1.1.0-beta.37
 
@@ -308,7 +308,7 @@
 
 - Allow to use URLPattern as a type with @runtime-edge/ponyfill ([#113](https://github.com/khulnasoft/runtime-edge/pull/113))
 
-* Mark the createCaches export as nullable as it does not exist in Edge Runtime ([#124](https://github.com/khulnasoft/runtime-edge/pull/124))
+* Mark the createCaches export as nullable as it does not exist in Runtime Edge ([#124](https://github.com/khulnasoft/runtime-edge/pull/124))
 
 ## 1.1.0-beta.32
 

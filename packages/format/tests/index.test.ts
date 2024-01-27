@@ -312,7 +312,7 @@ it('float (%f)', () => {
 
 it('custom inspect symbol', () => {
   ;(() => {
-    const customInspectSymbol = Symbol.for('edge-runtime.inspect.custom')
+    const customInspectSymbol = Symbol.for('runtime-edge.inspect.custom')
 
     const myObject = {
       [customInspectSymbol]() {
@@ -323,7 +323,7 @@ it('custom inspect symbol', () => {
     expect(format(myObject)).toBe('Hello from inspector')
   })()
   ;(() => {
-    const customInspectSymbol = Symbol.for('edge-runtime.inspect.custom')
+    const customInspectSymbol = Symbol.for('runtime-edge.inspect.custom')
 
     const myObject = {
       foo: 'bar',
@@ -342,7 +342,7 @@ it('custom inspect symbol', () => {
     expect(format('%O', myObject)).toBe('Hello from inspector')
   })()
   ;(() => {
-    const customInspectSymbol = Symbol.for('edge-runtime.inspect.custom')
+    const customInspectSymbol = Symbol.for('runtime-edge.inspect.custom')
 
     class Password {
       constructor(value) {
@@ -368,7 +368,7 @@ it('custom inspect symbol', () => {
     expect(format('%j', new Password('r0sebud'))).toBe('{}')
   })()
   ;(() => {
-    const customInspectSymbol = Symbol.for('edge-runtime.inspect.custom')
+    const customInspectSymbol = Symbol.for('runtime-edge.inspect.custom')
 
     class Password {
       constructor(value) {
@@ -396,7 +396,7 @@ it('custom inspect symbol', () => {
     expect(format('%j', new Password('r0sebud'))).toBe('{}')
   })()
   ;(() => {
-    const customInspectSymbol = Symbol.for('edge-runtime.inspect.custom')
+    const customInspectSymbol = Symbol.for('runtime-edge.inspect.custom')
 
     class Password {
       constructor(value) {
@@ -425,7 +425,7 @@ it('custom inspect symbol', () => {
     expect(format('%j', new Password('r0sebud'))).toBe('{}')
   })()
   ;(() => {
-    const customInspectSymbol = Symbol.for('edge-runtime.inspect.custom')
+    const customInspectSymbol = Symbol.for('runtime-edge.inspect.custom')
 
     class Password {
       private deepObject: Record<string, any>

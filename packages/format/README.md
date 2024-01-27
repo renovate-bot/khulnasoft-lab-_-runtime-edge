@@ -5,7 +5,7 @@
   <br>
   <br>
   <p align="center"><strong>@runtime-edge/format</strong>: An <a href="https://nodejs.org/api/util.html#utilinspectobject-showhidden-depth-colors" target='_blank' rel='noopener noreferrer'>util.inspect</a> implementation to serialize any value.</p>
-  <p align="center">See <a href="https://edge-runtime.vercel.app/packages/primitives" target='_blank' rel='noopener noreferrer'>@runtime-edge/format</a> section in our <a href="https://edge-runtime.vercel.app/" target='_blank' rel='noopener noreferrer'>website</a> for more information.</p>
+  <p align="center">See <a href="https://runtime-edge.vercel.app/packages/primitives" target='_blank' rel='noopener noreferrer'>@runtime-edge/format</a> section in our <a href="https://runtime-edge.vercel.app/" target='_blank' rel='noopener noreferrer'>website</a> for more information.</p>
   <br>
 </div>
 

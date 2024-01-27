@@ -1,7 +1,7 @@
 {
   "name": "@runtime-edge/node-utils",
   "description": "A set of helpers for running edge-compliant code in Node.js environment",
-  "homepage": "https://edge-runtime.vercel.app/packages/node-utils",
+  "homepage": "https://runtime-edge.vercel.app/packages/node-utils",
   "version": "2.2.2",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

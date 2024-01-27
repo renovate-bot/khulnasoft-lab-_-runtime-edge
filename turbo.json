@@ -6,7 +6,7 @@
       "outputs": ["dist/**"],
       "dependsOn": ["^build"]
     },
-    "edge-runtime#build": {
+    "runtime-edge#build": {
       "cache": false,
       "dependsOn": ["^build"],
       "outputs": ["src/version.ts"]

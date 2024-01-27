@@ -5,4 +5,4 @@ export {
   runServer,
 } from './server'
 
-export { EdgeRuntime } from './edge-runtime'
+export { EdgeRuntime } from './runtime-edge'
