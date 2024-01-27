@@ -66,8 +66,8 @@ importers:
   docs:
     dependencies:
       '@heroicons/react':
-        specifier: ~2.0.18
-        version: 2.0.18(react@18.2.0)
+        specifier: ~2.1.1
+        version: 2.1.1(react@18.2.0)
       next:
         specifier: ~14.0.3
         version: 14.0.3(@babel/core@7.20.12)(react-dom@18.2.0)(react@18.2.0)
@@ -144,15 +144,15 @@ importers:
 
   packages/jest-environment:
     dependencies:
-      '@runtime-edge/vm':
-        specifier: workspace:*
-        version: link:../vm
       '@jest/environment':
         specifier: 29.5.0
         version: 29.5.0
       '@jest/fake-timers':
         specifier: 29.5.0
         version: 29.5.0
+      '@runtime-edge/vm':
+        specifier: workspace:*
+        version: link:../vm
       jest-mock:
         specifier: 29.5.0
         version: 29.5.0
@@ -252,12 +252,12 @@ importers:
       '@runtime-edge/format':
         specifier: workspace:*
         version: link:../format
-      '@runtime-edge/vm':
-        specifier: workspace:*
-        version: link:../vm
       '@runtime-edge/ponyfill':
         specifier: workspace:*
         version: link:../ponyfill
+      '@runtime-edge/vm':
+        specifier: workspace:*
+        version: link:../vm
       async-listen:
         specifier: 3.0.1
         version: 3.0.1
@@ -1545,8 +1545,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@heroicons/react@2.0.18(react@18.2.0):
-    resolution: {integrity: sha512-7TyMjRrZZMBPa+/5Y8lN0iyvUU/01PeMGX2+RE7cQWpEUIcb4QotzUObFkJDejj/HUH4qjP/eQ0gzzKs2f+6Yw==}
+  /@heroicons/react@2.1.1(react@18.2.0):
+    resolution: {integrity: sha512-JyyN9Lo66kirbCMuMMRPtJxtKJoIsXKS569ebHGGRKbl8s4CtUfLnyKJxteA+vIKySocO4s1SkTkGS4xtG/yEA==}
     peerDependencies:
       react: '>= 16'
     dependencies:
