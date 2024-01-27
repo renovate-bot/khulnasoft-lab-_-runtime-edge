@@ -33,7 +33,7 @@ pnpm install @runtime-edge/node-utils --save
 
 ## License
 
-**@runtime-edge/node-utils** © [Vercel](https://vercel.com), released under the [MPLv2](https://github.com/khulnasoft/runtime-edge/blob/main/LICENSE.md) License.<br>
-Authored and maintained by [Vercel](https://vercel.com) with help from [contributors](https://github.com/khulnasoft/runtime-edge/contributors).
+**@runtime-edge/node-utils** © [Khulnasoft](https://khulnasoft.com), released under the [MPLv2](https://github.com/khulnasoft/runtime-edge/blob/main/LICENSE.md) License.<br>
+Authored and maintained by [Khulnasoft](https://khulnasoft.com) with help from [contributors](https://github.com/khulnasoft/runtime-edge/contributors).
 
-> [vercel.com](https://vercel.com) · GitHub [Vercel](https://github.com/vercel) · Twitter [@vercel](https://twitter.com/vercel)
+> [khulnasoft.com](https://khulnasoft.com) · GitHub [Khulnasoft](https://github.com/vercel) · Twitter [@vercel](https://twitter.com/vercel)

@@ -2,13 +2,13 @@ const testOrSkip =
   process.versions.node.split('.').map(Number)[0] > 16 ? test : test.skip
 
 testOrSkip('evaluate promise', () => {
-  const url = 'https://vercel.com/foo/bar?one=value'
+  const url = 'https://khulnasoft.com/foo/bar?one=value'
   const req = new Request(url)
   expect(req.url).toEqual(url)
 })
 
 testOrSkip('parses and reconstructs the URL alone', () => {
-  const url = 'https://vercel.com/foo/bar?one=value'
+  const url = 'https://khulnasoft.com/foo/bar?one=value'
   const req = new Request(url)
   expect(req.url).toEqual(url)
 })
@@ -28,9 +28,9 @@ testOrSkip('Request.referrer is `about:client` by default', () => {
 
 testOrSkip('Request.referrer can be customized', () => {
   const request = new Request('https://example.vercel.sh', {
-    referrer: 'https://vercel.com/home',
+    referrer: 'https://khulnasoft.com/home',
   })
-  expect(request.referrer).toEqual('https://vercel.com/home')
+  expect(request.referrer).toEqual('https://khulnasoft.com/home')
 })
 
 testOrSkip('create a Request instance using second argument', () => {

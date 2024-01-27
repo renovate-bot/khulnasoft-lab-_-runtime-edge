@@ -37,7 +37,7 @@
     "@svitejs/changesets-changelog-github-compact": "latest",
     "@types/jest": "29.5.10",
     "@types/node": "^16.18.76",
-    "c8": "latest",
+    "c8": "9.1.0",
     "esbuild": "0.19.7",
     "finepack": "latest",
     "git-authors-cli": "latest",

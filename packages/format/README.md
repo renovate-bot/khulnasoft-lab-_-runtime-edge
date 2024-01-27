@@ -31,7 +31,7 @@ pnpm install @runtime-edge/format --save
 
 ## License
 
-**@runtime-edge/format** © [Vercel](https://vercel.com), released under the [MPLv2](https://github.com/khulnasoft/runtime-edge/blob/main/LICENSE.md) License, based on [Node.js source code](https://github.com/nodejs/node/blob/v18.7.0/lib/util.js).<br>
-Authored and maintained by [Vercel](https://vercel.com) with help from [contributors](https://github.com/khulnasoft/runtime-edge/contributors).
+**@runtime-edge/format** © [Khulnasoft](https://khulnasoft.com), released under the [MPLv2](https://github.com/khulnasoft/runtime-edge/blob/main/LICENSE.md) License, based on [Node.js source code](https://github.com/nodejs/node/blob/v18.7.0/lib/util.js).<br>
+Authored and maintained by [Khulnasoft](https://khulnasoft.com) with help from [contributors](https://github.com/khulnasoft/runtime-edge/contributors).
 
-> [vercel.com](https://vercel.com) · GitHub [Vercel](https://github.com/vercel) · Twitter [@vercel](https://twitter.com/vercel)
+> [khulnasoft.com](https://khulnasoft.com) · GitHub [Khulnasoft](https://github.com/vercel) · Twitter [@vercel](https://twitter.com/vercel)

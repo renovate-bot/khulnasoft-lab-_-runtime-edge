@@ -1,6 +1,6 @@
 # Runtime Edge
 
-The **runtime-edge** package is a high-level, ready to use, general purpose way to run [Vercel Edge Functions](https://vercel.com/edge).
+The **runtime-edge** package is a high-level, ready to use, general purpose way to run [Khulnasoft Edge Functions](https://khulnasoft.com/edge).
 
 It runs under the same condition than production environment, but locally in your machine.
 
@@ -33,7 +33,7 @@ addEventListener('fetch', event => {
 const runtime = new RuntimeEdge({ initialCode })
 
 const response = await runtime.dispatchFetch(
-  'http://vercel.com?url=https://example.vercel.sh',
+  'http://khulnasoft.com?url=https://example.vercel.sh',
 )
 
 // If your code logic performs asynchronous tasks, you should await them.
@@ -77,7 +77,7 @@ Some initial code to be evaluated as the VM for the runtime is created.
 
 It inherits from **@runtime-edge/vm**, plus:
 
-##### VercelRuntime: string
+##### KhulnasoftRuntime: string
 
 Returns the runtime version.
 

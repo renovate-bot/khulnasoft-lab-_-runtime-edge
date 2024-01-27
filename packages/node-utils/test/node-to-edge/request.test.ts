@@ -79,7 +79,7 @@ it(`uses default origin as request url origin when there are no host header`, as
 })
 
 it(`uses request host header as request url origin`, async () => {
-  const host = 'vercel.com'
+  const host = 'khulnasoft.com'
   await expect(
     mapRequest(server.url, { headers: { host } }),
   ).resolves.toHaveProperty('url', `http://${host}/`)

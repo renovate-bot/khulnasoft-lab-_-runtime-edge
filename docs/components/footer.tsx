@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { useState } from 'react'
 
-const Vercel = ({ height = 20 }) => (
+const Khulnasoft = ({ height = 20 }) => (
   <svg height={height} viewBox='0 0 283 64' fill='none'>
     <path
       fill='currentColor'
@@ -49,7 +49,7 @@ const navigation = {
   company: [
     {
       name: 'Open Source Software',
-      href: 'https://vercel.com/oss?utm_source=turborepo.org&utm_medium=referral&utm_campaign=footer-ossLink',
+      href: 'https://khulnasoft.com/oss?utm_source=turborepo.org&utm_medium=referral&utm_campaign=footer-ossLink',
     },
     { name: 'GitHub', href: 'https://github.com/vercel' },
     { name: 'Twitter', href: 'https://twitter.com/vercel' },
@@ -130,12 +130,12 @@ export function Footer() {
               className='text-current'
               target='_blank'
               rel='noopener noreferrer'
-              href='https://vercel.com?utm_source=turborepo.org&utm_medium=referral&utm_campaign=footer-logoLink'
+              href='https://khulnasoft.com?utm_source=turborepo.org&utm_medium=referral&utm_campaign=footer-logoLink'
             >
-              <Vercel />
+              <Khulnasoft />
             </a>
             <p className='mt-4 text-xs text-gray-500 '>
-              &copy; {new Date().getFullYear()} Vercel, Inc. All rights
+              &copy; {new Date().getFullYear()} Khulnasoft, Inc. All rights
               reserved.
             </p>
           </div>

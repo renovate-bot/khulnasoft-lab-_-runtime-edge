@@ -7,10 +7,10 @@
   "repository": {
     "directory": "packages/jest-environment",
     "type": "git",
-    "url": "git+https://github.com/vercel/runtime-edge.git"
+    "url": "git+https://github.com/khulnasoft/runtime-edge.git"
   },
   "bugs": {
-    "url": "https://github.com/vercel/runtime-edge/issues"
+    "url": "https://github.com/khulnasoft/runtime-edge/issues"
   },
   "keywords": [
     "edge",
