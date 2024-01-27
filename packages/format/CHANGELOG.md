@@ -1,4 +1,4 @@
-# @edge-runtime/format
+# @runtime-edge/format
 
 ## 2.2.0
 

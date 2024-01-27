@@ -1,5 +1,5 @@
 {
-  "name": "@edge-runtime/format",
+  "name": "@runtime-edge/format",
   "description": "A printf-like string formatter for Edge Runtime",
   "homepage": "https://github.com/khulnasoft/runtime-edge#readme",
   "version": "2.2.0",
