@@ -1,5 +1,5 @@
 {
-  "available-apis": "Edge Runtime APIs",
+  "available-apis": "Runtime Edge APIs",
   "polyfills": "Polyfills",
   "typescript-support": "TypeScript support"
 }

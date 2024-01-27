@@ -1,4 +1,4 @@
-# Edge Runtime
+# Runtime Edge
 
 The **edge-runtime** package is a high-level, ready to use, general purpose way to run [Vercel Edge Functions](https://vercel.com/edge).
 
@@ -46,7 +46,7 @@ console.log(response.status)
 
 ### as HTTP server
 
-You can use `runServer` to expose _any_ Edge Runtime instance as regular HTTP server:
+You can use `runServer` to expose _any_ Runtime Edge instance as regular HTTP server:
 
 ```js
 import { runServer, EdgeRuntime } from 'runtime-edge'
@@ -61,7 +61,7 @@ console.log(`Listening at ${server.url}`)
 
 ### new EdgeRuntime([options])
 
-It creates a new Edge Runtime instance.
+It creates a new Runtime Edge instance.
 
 #### options
 
@@ -117,7 +117,7 @@ Creates a Node.js HTTP handler.
 
 ##### runtime: EdgeRuntime
 
-The Edge Runtime instance to be used that should be previously declared.
+The Runtime Edge instance to be used that should be previously declared.
 
 ##### logger?: Logger
 
