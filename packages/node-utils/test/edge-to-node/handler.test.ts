@@ -2,7 +2,7 @@ import type { TestServer } from '../test-utils/run-test-server'
 import { buildToNodeHandler } from '../../src/edge-to-node/handler'
 import { runTestServer } from '../test-utils/run-test-server'
 import { serializeResponse } from '../test-utils/serialize-response'
-import * as Edge from '@edge-runtime/primitives'
+import * as Edge from '@runtime-edge/primitives'
 
 const transformToNode = buildToNodeHandler(
   {

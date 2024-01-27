@@ -1,8 +1,8 @@
 import type { IncomingMessage, ServerResponse } from 'http'
-import type * as ET from '@edge-runtime/primitives'
+import type * as ET from '@runtime-edge/primitives'
 import { getKillServer } from './get-kill-server'
 import { createServer } from 'http'
-import { fetch, URL } from '@edge-runtime/primitives'
+import { fetch, URL } from '@runtime-edge/primitives'
 import listen from 'test-listen'
 interface ServerOptions {
   handler: (

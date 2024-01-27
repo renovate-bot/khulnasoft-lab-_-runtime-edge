@@ -1,4 +1,4 @@
-import { Headers } from '@edge-runtime/primitives'
+import { Headers } from '@runtime-edge/primitives'
 import { toOutgoingHeaders } from '../../src'
 
 it('handles simple header values', () => {

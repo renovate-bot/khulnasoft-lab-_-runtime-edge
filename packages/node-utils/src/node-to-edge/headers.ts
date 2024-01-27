@@ -1,4 +1,4 @@
-import type { Headers } from '@edge-runtime/primitives'
+import type { Headers } from '@runtime-edge/primitives'
 import type { IncomingHttpHeaders } from 'http'
 
 interface Dependencies {

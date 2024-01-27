@@ -11,7 +11,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`fb34f31`](https://github.com/khulnasoft/runtime-edge/commit/fb34f3172cf5f32c8e70151c2dcfdc5913ac8b8c)]:
-  - @edge-runtime/cookies@3.4.1
+  - @runtime-edge/cookies@3.4.1
 
 ## 2.2.0
 
@@ -22,21 +22,21 @@
 ### Patch Changes
 
 - Updated dependencies [[`7cc92cc`](https://github.com/khulnasoft/runtime-edge/commit/7cc92ccd190c2d96483202d9f2e1a523778d1f48), [`89039c3`](https://github.com/khulnasoft/runtime-edge/commit/89039c3680f9fbef9b83af4b56d94bd3d1cf4253)]:
-  - @edge-runtime/cookies@3.4.0
+  - @runtime-edge/cookies@3.4.0
 
 ## 2.1.3
 
 ### Patch Changes
 
 - Updated dependencies [[`a4a7dc0`](https://github.com/khulnasoft/runtime-edge/commit/a4a7dc09e4ba2debc9d336ca5fca03fea0c60248), [`dc587c2`](https://github.com/khulnasoft/runtime-edge/commit/dc587c27e71cc9f717c9c58de85663156eab914b)]:
-  - @edge-runtime/cookies@3.3.0
+  - @runtime-edge/cookies@3.3.0
 
 ## 2.1.2
 
 ### Patch Changes
 
 - Updated dependencies [[`586de6e`](https://github.com/khulnasoft/runtime-edge/commit/586de6e7bc7bb18121ed2853a4598077a46a21cf)]:
-  - @edge-runtime/cookies@3.2.3
+  - @runtime-edge/cookies@3.2.3
 
 ## 2.1.1
 
@@ -45,7 +45,7 @@
 - chore(cookies): expose `.splitCookiesString` ([#473](https://github.com/khulnasoft/runtime-edge/pull/473))
 
 - Updated dependencies [[`8d21ddc`](https://github.com/khulnasoft/runtime-edge/commit/8d21ddc0dd9d37abb02a902f69c3902469a22a68)]:
-  - @edge-runtime/cookies@3.2.2
+  - @runtime-edge/cookies@3.2.2
 
 ## 2.1.0
 

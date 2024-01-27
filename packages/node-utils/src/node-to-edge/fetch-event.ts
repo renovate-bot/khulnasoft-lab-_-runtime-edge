@@ -1,4 +1,4 @@
-import type { Request } from '@edge-runtime/primitives'
+import type { Request } from '@runtime-edge/primitives'
 import { BuildDependencies } from '../types'
 
 export function buildToFetchEvent(dependencies: BuildDependencies) {

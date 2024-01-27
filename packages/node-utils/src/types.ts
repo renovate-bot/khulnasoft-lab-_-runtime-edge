@@ -5,7 +5,7 @@ import type {
   Headers,
   ReadableStream,
   FetchEvent,
-} from '@edge-runtime/primitives'
+} from '@runtime-edge/primitives'
 export interface BuildDependencies {
   Headers: typeof Headers
   ReadableStream: typeof ReadableStream

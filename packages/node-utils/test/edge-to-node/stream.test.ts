@@ -1,4 +1,4 @@
-import { ReadableStream } from '@edge-runtime/primitives'
+import { ReadableStream } from '@runtime-edge/primitives'
 import { Readable } from 'node:stream'
 import { toToReadable } from '../../src'
 

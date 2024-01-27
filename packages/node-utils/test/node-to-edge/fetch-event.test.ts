@@ -1,4 +1,4 @@
-import * as EdgeRuntime from '@edge-runtime/primitives'
+import * as EdgeRuntime from '@runtime-edge/primitives'
 import { buildToFetchEvent } from '../../src'
 
 const toFetchEvent = buildToFetchEvent({

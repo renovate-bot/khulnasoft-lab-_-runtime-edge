@@ -1,7 +1,7 @@
 import type { TestServer } from '../test-utils/run-test-server'
 import { buildToRequest } from '../../src/node-to-edge/request'
 import { runTestServer } from '../test-utils/run-test-server'
-import * as EdgeRuntime from '@edge-runtime/primitives'
+import * as EdgeRuntime from '@runtime-edge/primitives'
 
 const nodeRequestToRequest = buildToRequest({
   Headers: EdgeRuntime.Headers,

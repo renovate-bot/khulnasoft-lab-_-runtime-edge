@@ -1,5 +1,5 @@
 import type { IncomingMessage } from 'node:http'
-import type { Request } from '@edge-runtime/primitives'
+import type { Request } from '@runtime-edge/primitives'
 import { buildToHeaders } from './headers'
 import { buildToReadableStream } from './stream'
 import { BuildDependencies, RequestOptions } from '../types'
