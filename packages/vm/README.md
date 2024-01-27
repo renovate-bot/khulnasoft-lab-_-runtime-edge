@@ -4,8 +4,8 @@
   <img src="https://user-images.githubusercontent.com/2096101/235127419-ac6fe609-d0cd-4339-a593-c48305a83823.png#gh-light-mode-only">
   <br>
   <br>
-  <p align="center"><strong>@edge-runtime/vm</strong>: Low level bindings for creating Web Standard contexts.</p>
-  <p align="center">See <a href="https://edge-runtime.vercel.app/packages/vm" target='_blank' rel='noopener noreferrer'>@edge-runtime/vm</a> section in our <a href="https://edge-runtime.vercel.app/" target='_blank' rel='noopener noreferrer'>website</a> for more information.</p>
+  <p align="center"><strong>@runtime-edge/vm</strong>: Low level bindings for creating Web Standard contexts.</p>
+  <p align="center">See <a href="https://edge-runtime.vercel.app/packages/vm" target='_blank' rel='noopener noreferrer'>@runtime-edge/vm</a> section in our <a href="https://edge-runtime.vercel.app/" target='_blank' rel='noopener noreferrer'>website</a> for more information.</p>
   <br>
 </div>
 
@@ -14,24 +14,24 @@
 Using npm:
 
 ```sh
-npm install @edge-runtime/vm --save
+npm install @runtime-edge/vm --save
 ```
 
 or using yarn:
 
 ```sh
-yarn add @edge-runtime/vm --dev
+yarn add @runtime-edge/vm --dev
 ```
 
 or using pnpm:
 
 ```sh
-pnpm install @edge-runtime/vm --save
+pnpm install @runtime-edge/vm --save
 ```
 
 ## License
 
-**@edge-runtime/vm** © [Vercel](https://vercel.com), released under the [MPLv2](https://github.com/khulnasoft/runtime-edge/blob/main/LICENSE.md) License.<br>
+**@runtime-edge/vm** © [Vercel](https://vercel.com), released under the [MPLv2](https://github.com/khulnasoft/runtime-edge/blob/main/LICENSE.md) License.<br>
 Authored and maintained by [Vercel](https://vercel.com) with help from [contributors](https://github.com/khulnasoft/runtime-edge/contributors).
 
 > [vercel.com](https://vercel.com) · GitHub [Vercel](https://github.com/vercel) · Twitter [@vercel](https://twitter.com/vercel)

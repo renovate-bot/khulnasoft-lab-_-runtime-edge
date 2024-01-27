@@ -1,5 +1,5 @@
-import type * as EdgePrimitives from '@edge-runtime/primitives'
-import { load as loadPrimitives } from '@edge-runtime/primitives/load'
+import type * as EdgePrimitives from '@runtime-edge/primitives'
+import { load as loadPrimitives } from '@runtime-edge/primitives/load'
 import type { DispatchFetch, ErrorHandler, RejectionHandler } from './types'
 import { Context, runInContext } from 'vm'
 import { VM, type VMContext, type VMOptions } from './vm'
