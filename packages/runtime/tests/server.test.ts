@@ -1,4 +1,4 @@
-import { EdgeRuntime } from '../src/runtime-edge'
+import { RuntimeEdge } from '../src/runtime-edge'
 import { runServer } from '../src/server'
 import fetch from 'node-fetch'
 import type { Readable } from 'stream'
@@ -14,7 +14,7 @@ function sleep(ms: number) {
 }
 
 test('starts an http server', async () => {
-  const runtime = new EdgeRuntime()
+  const runtime = new RuntimeEdge()
   runtime.evaluate(`
     addEventListener('fetch', event => {
       return event.respondWith(new Response(null))
@@ -26,7 +26,7 @@ test('starts an http server', async () => {
 })
 
 test('run fetch events through http', async () => {
-  const runtime = new EdgeRuntime()
+  const runtime = new RuntimeEdge()
   runtime.evaluate(`
     addEventListener('fetch', event => {
       const { searchParams } = new URL(event.request.url)
@@ -45,7 +45,7 @@ test('run fetch events through http', async () => {
 })
 
 test('works with json', async () => {
-  const runtime = new EdgeRuntime()
+  const runtime = new RuntimeEdge()
   runtime.evaluate(`
     addEventListener('fetch', event => {
       return event.respondWith(
@@ -66,7 +66,7 @@ test('works with json', async () => {
 })
 
 test('responds with an error when the code fails', async () => {
-  const runtime = new EdgeRuntime()
+  const runtime = new RuntimeEdge()
   runtime.evaluate(`
     async function handleRequest() {
       throw new Error('Boom');
@@ -86,7 +86,7 @@ test('responds with an error when the code fails', async () => {
 })
 
 test('works with POST HTTP method', async () => {
-  const runtime = new EdgeRuntime()
+  const runtime = new RuntimeEdge()
   runtime.evaluate(`
     async function handleRequest (event) {
       const body = await event.request.json()
@@ -117,7 +117,7 @@ test('works with POST HTTP method', async () => {
 })
 
 test('allows to wait for effects created with waitUntil', async () => {
-  const runtime = new EdgeRuntime()
+  const runtime = new RuntimeEdge()
   runtime.evaluate(`
     async function doAsyncStuff (event) {
       await new Promise((resolve) => setTimeout(resolve, 2000))
@@ -142,7 +142,7 @@ test('allows to wait for effects created with waitUntil', async () => {
 })
 
 test(`do not fail writing to the response socket Uint8Array`, async () => {
-  const runtime = new EdgeRuntime()
+  const runtime = new RuntimeEdge()
   runtime.evaluate(`
     addEventListener('fetch', event => {
       const stream = new ReadableStream({
@@ -169,7 +169,7 @@ test(`do not fail writing to the response socket Uint8Array`, async () => {
 })
 
 test('streamable sanity test', async () => {
-  const runtime = new EdgeRuntime()
+  const runtime = new RuntimeEdge()
   runtime.evaluate(`
     addEventListener('fetch', event => {
       let i = 0;
@@ -202,7 +202,7 @@ test('streamable sanity test', async () => {
 })
 
 test('allows long-running streams to be cancelled immediately', async () => {
-  const runtime = new EdgeRuntime()
+  const runtime = new RuntimeEdge()
 
   const pulled = (runtime.context.pulled = [])
   runtime.evaluate(`
@@ -253,7 +253,7 @@ test('allows long-running streams to be cancelled immediately', async () => {
 })
 
 test('allows long-running streams to be cancelled after partial read', async () => {
-  const runtime = new EdgeRuntime()
+  const runtime = new RuntimeEdge()
 
   const pulled = (runtime.context.pulled = [])
   runtime.evaluate(`

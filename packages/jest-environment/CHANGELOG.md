@@ -235,7 +235,7 @@
 
 ### Minor Changes
 
-- Merge `EdgeRuntime` into `EdgeVM` ([#289](https://github.com/vercel/runtime-edge/pull/289))
+- Merge `RuntimeEdge` into `EdgeVM` ([#289](https://github.com/vercel/runtime-edge/pull/289))
 
 ## 2.0.8
 

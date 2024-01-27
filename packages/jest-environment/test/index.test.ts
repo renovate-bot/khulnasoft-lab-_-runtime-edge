@@ -16,6 +16,6 @@ test('allows to run crypto', async () => {
   expect(crypto.getRandomValues(array)).toHaveLength(array.length)
 })
 
-test('has EdgeRuntime global', () => {
-  expect(EdgeRuntime).toEqual('runtime-edge')
+test('has RuntimeEdge global', () => {
+  expect(RuntimeEdge).toEqual('runtime-edge')
 })

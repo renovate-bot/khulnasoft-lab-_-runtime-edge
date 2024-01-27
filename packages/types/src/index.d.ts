@@ -9,7 +9,7 @@ declare global {
     type: 'fetch',
     listener: (event: Edge.FetchEvent) => void,
   ): void
-  const EdgeRuntime: Record<never, never>
+  const RuntimeEdge: Record<never, never>
   const globalThis: typeof Edge
   const FetchEvent: typeof Edge.FetchEvent
   const URLPattern: typeof Edge.URLPattern

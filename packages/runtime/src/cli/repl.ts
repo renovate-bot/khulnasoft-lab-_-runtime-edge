@@ -3,7 +3,7 @@ import createRepl from 'repl'
 import { homedir } from 'os'
 import { join } from 'path'
 
-import { EdgeRuntime } from '../runtime-edge'
+import { RuntimeEdge } from '../runtime-edge'
 
 const format = createFormat()
 
@@ -18,7 +18,7 @@ Object.getOwnPropertyNames(repl.context).forEach(
   (mod) => delete repl.context[mod],
 )
 
-const runtime = new EdgeRuntime()
+const runtime = new RuntimeEdge()
 
 Object.getOwnPropertyNames(runtime.context)
   .filter((key) => !key.startsWith('__'))
@@ -26,11 +26,11 @@ Object.getOwnPropertyNames(runtime.context)
     Object.assign(repl.context, { [key]: runtime.context[key] }),
   )
 
-Object.defineProperty(repl.context, 'EdgeRuntime', {
+Object.defineProperty(repl.context, 'RuntimeEdge', {
   configurable: false,
   enumerable: false,
   writable: false,
-  value: runtime.context.EdgeRuntime,
+  value: runtime.context.RuntimeEdge,
 })
 
 export { repl }

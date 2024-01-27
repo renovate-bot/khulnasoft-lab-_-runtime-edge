@@ -1,14 +1,14 @@
 import type { TestServer } from '../test-utils/run-test-server'
 import { buildToRequest } from '../../src/node-to-edge/request'
 import { runTestServer } from '../test-utils/run-test-server'
-import * as EdgeRuntime from '@runtime-edge/primitives'
+import * as RuntimeEdge from '@runtime-edge/primitives'
 
 const nodeRequestToRequest = buildToRequest({
-  Headers: EdgeRuntime.Headers,
-  ReadableStream: EdgeRuntime.ReadableStream,
-  Request: EdgeRuntime.Request,
+  Headers: RuntimeEdge.Headers,
+  ReadableStream: RuntimeEdge.ReadableStream,
+  Request: RuntimeEdge.Request,
   Uint8Array: Uint8Array,
-  FetchEvent: EdgeRuntime.FetchEvent,
+  FetchEvent: RuntimeEdge.FetchEvent,
 })
 
 let requestMap = new Map<string, Request>()
@@ -28,7 +28,7 @@ beforeAll(async () => {
         defaultOrigin: server.url,
       })
       const [body, readable] = request.body?.tee() ?? []
-      requestMap.set(requestId, new EdgeRuntime.Request(request, { body }))
+      requestMap.set(requestId, new RuntimeEdge.Request(request, { body }))
       response.writeHead(200, { 'Content-Type': 'text/plain' })
 
       /**
@@ -61,7 +61,7 @@ it('maps the request input', async () => {
 })
 
 it('maps the request headers`', async () => {
-  const headers = new EdgeRuntime.Headers({ 'x-hi': 'there' })
+  const headers = new RuntimeEdge.Headers({ 'x-hi': 'there' })
   headers.append('vercel-is-awesome', 'true')
   headers.append('vercel-is-awesome', 'you damn right')
   const request = await mapRequest(server.url, { headers })
@@ -102,8 +102,8 @@ it('allows to read the body as text', async () => {
 })
 
 it('allows to read the body as chunks', async () => {
-  const encoder = new EdgeRuntime.TextEncoder()
-  const body = new EdgeRuntime.ReadableStream<Uint8Array>({
+  const encoder = new RuntimeEdge.TextEncoder()
+  const body = new RuntimeEdge.ReadableStream<Uint8Array>({
     start(controller) {
       controller.enqueue(encoder.encode('Hello '))
       setTimeout(() => {
@@ -134,10 +134,10 @@ it('does not allow to read the body twice', async () => {
 })
 
 async function mapRequest(input: string, init: RequestInit = {}) {
-  const requestId = EdgeRuntime.crypto.randomUUID()
-  const headers = new EdgeRuntime.Headers(init.headers)
+  const requestId = RuntimeEdge.crypto.randomUUID()
+  const headers = new RuntimeEdge.Headers(init.headers)
   headers.set('x-request-id', requestId)
-  const response = await EdgeRuntime.fetch(input, { ...init, headers })
+  const response = await RuntimeEdge.fetch(input, { ...init, headers })
   const request = requestMap.get(requestId)
   expect(response.status).toEqual(200)
   expect(request).not.toBeUndefined()

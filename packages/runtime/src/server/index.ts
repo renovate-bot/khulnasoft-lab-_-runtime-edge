@@ -3,4 +3,4 @@ export {
   pipeBodyStreamToResponse,
 } from './body-streams'
 export { createHandler } from './create-handler'
-export { runServer, EdgeRuntimeServer } from './run-server'
+export { runServer, RuntimeEdgeServer } from './run-server'

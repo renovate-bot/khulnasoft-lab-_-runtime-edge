@@ -145,7 +145,7 @@ function runAbortedProcess({ signal }: { signal: AbortSignal }) {
 }
 
 function expectSignalToBeEqual(signal: any, reason: any) {
-  if (globalThis.EdgeRuntime !== undefined) {
+  if (globalThis.RuntimeEdge !== undefined) {
     expect(signal.reason).toEqual(reason)
   } else {
     expect(signal.reason.message).toEqual(reason.message)

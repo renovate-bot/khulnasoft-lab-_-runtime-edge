@@ -1,8 +1,8 @@
-import type { EdgeVM as IEdgeRuntime } from '../src/edge-vm'
+import type { EdgeVM as IRuntimeEdge } from '../src/edge-vm'
 
 const handlerByEvent = new Map<string | symbol, Function>()
 
-let EdgeVM: typeof IEdgeRuntime
+let EdgeVM: typeof IRuntimeEdge
 
 beforeAll(async () => {
   jest.spyOn(process, 'on').mockImplementation((event, handler) => {
@@ -14,25 +14,25 @@ beforeAll(async () => {
 })
 
 describe('Global primitives', () => {
-  let runtime: IEdgeRuntime
+  let runtime: IRuntimeEdge
 
   beforeAll(() => {
     runtime = new EdgeVM()
   })
 
-  it('EdgeRuntime', async () => {
+  it('RuntimeEdge', async () => {
     const runtime = new EdgeVM()
     {
-      const meta = runtime.evaluate(`(globalThis.EdgeRuntime)`)
+      const meta = runtime.evaluate(`(globalThis.RuntimeEdge)`)
       expect(meta).toEqual('runtime-edge')
     }
     {
-      const meta = runtime.evaluate(`(EdgeRuntime)`)
+      const meta = runtime.evaluate(`(RuntimeEdge)`)
       expect(meta).toEqual('runtime-edge')
     }
     const keys = runtime.evaluate<string[]>(`(Object.keys(globalThis))`)
     expect(keys).not.toHaveLength(0)
-    expect(keys).not.toContain('EdgeRuntime')
+    expect(keys).not.toContain('RuntimeEdge')
   })
 
   it.each([

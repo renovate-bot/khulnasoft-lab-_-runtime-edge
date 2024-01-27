@@ -256,7 +256,7 @@
 
 ### Minor Changes
 
-- Merge `EdgeRuntime` into `EdgeVM` ([#289](https://github.com/khulnasoft/runtime-edge/pull/289))
+- Merge `RuntimeEdge` into `EdgeVM` ([#289](https://github.com/khulnasoft/runtime-edge/pull/289))
 
 ## 2.1.4
 

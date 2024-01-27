@@ -18,9 +18,9 @@ npm install runtime-edge
 Once it's installed, you can evaluate any script into the runtime context:
 
 ```js
-import { EdgeRuntime } from 'runtime-edge'
+import { RuntimeEdge } from 'runtime-edge'
 
-const runtime = new EdgeRuntime()
+const runtime = new RuntimeEdge()
 const result = await runtime.evaluate("fetch('https://example.vercel.sh')")
 
 console.log(result)
@@ -29,9 +29,9 @@ console.log(result)
 The runtime provides you with ready to use Web APIs that can be extended if needed:
 
 ```js
-import { EdgeRuntime } from 'runtime-edge'
+import { RuntimeEdge } from 'runtime-edge'
 
-const runtime = new EdgeRuntime({
+const runtime = new RuntimeEdge({
   extend: (context) => {
     const rawFetch = context.fetch.bind(context.fetch)
     context.fetch = async (input: RequestInfo | URL, init?: RequestInit) =>
@@ -54,15 +54,15 @@ console.log(result)
 You can load some initial code, for example, to be ready for receiving fetch events:
 
 ```js
-import { EdgeRuntime } from 'runtime-edge'
+import { RuntimeEdge } from 'runtime-edge'
 
 const initialCode = `
 addEventListener('fetch', event => {
   return event.respondWith(fetch(event.request.url))
 })`
 
-const edgeRuntime = new EdgeRuntime({ initialCode })
-const response = await edgeRuntime.dispatchFetch('https://example.vercel.sh')
+const runtimeEdge = new RuntimeEdge({ initialCode })
+const response = await runtimeEdge.dispatchFetch('https://example.vercel.sh')
 
 // If your code logic performs asynchronous tasks, you should await them.
 // https://developer.mozilla.org/en-US/docs/Web/API/ExtendableEvent/waitUntil
@@ -74,7 +74,7 @@ console.log(await response.text())
 and expose it locally to be used via HTTP:
 
 ```js
-import { EdgeRuntime, runServer } from 'runtime-edge'
+import { RuntimeEdge, runServer } from 'runtime-edge'
 import { onExit } from 'signal-exit'
 import fetch from 'node-fetch'
 
@@ -85,9 +85,9 @@ addEventListener('fetch', event => {
   return event.respondWith(fetch(url))
 })`
 
-const edgeRuntime = new EdgeRuntime({ initialCode })
+const runtimeEdge = new RuntimeEdge({ initialCode })
 
-const server = await runServer({ runtime: edgeRuntime, port: 3000 })
+const server = await runServer({ runtime: runtimeEdge, port: 3000 })
 console.log(`> Edge server running at ${server.url}`)
 onExit(() => server.close())
 ```

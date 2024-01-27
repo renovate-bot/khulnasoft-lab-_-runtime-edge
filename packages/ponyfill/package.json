@@ -43,7 +43,7 @@
   "scripts": {
     "clean": "rm -rf node_modules",
     "test": "pnpm test:edge && pnpm test:node",
-    "test:edge": "EDGE_RUNTIME_EXISTS=true jest --env=@runtime-edge/jest-environment --testPathIgnorePatterns='.node.test.ts$'",
+    "test:edge": "RUNTIME_EDGE_EXISTS=true jest --env=@runtime-edge/jest-environment --testPathIgnorePatterns='.node.test.ts$'",
     "test:node": "jest --env=node"
   },
   "license": "MPL-2.0",

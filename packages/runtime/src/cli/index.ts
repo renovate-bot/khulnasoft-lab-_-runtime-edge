@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-import { EdgeRuntime } from '../runtime-edge'
+import { RuntimeEdge } from '../runtime-edge'
 import { promisify } from 'util'
 import { readFileSync } from 'fs'
-import { runServer, type EdgeRuntimeServer } from '../server'
+import { runServer, type RuntimeEdgeServer } from '../server'
 import childProcess from 'child_process'
 import { onExit } from 'signal-exit'
 import mri from 'mri'
@@ -57,7 +57,7 @@ async function main() {
     'utf-8',
   )
 
-  const runtime = new EdgeRuntime({ initialCode })
+  const runtime = new RuntimeEdge({ initialCode })
   if (!flags.listen) return runtime.evaluate('')
 
   const logger = await import('./logger').then(({ createLogger }) =>
@@ -73,7 +73,7 @@ async function main() {
   /**
    * Start a server with the script provided in the file path.
    */
-  let server: undefined | EdgeRuntimeServer
+  let server: undefined | RuntimeEdgeServer
   let port = flags.port
   while (server === undefined) {
     try {

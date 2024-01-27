@@ -144,7 +144,7 @@ testOrSkip('sets header calling Headers constructor', async () => {
   const text = await response.text()
   expect(text).toBe('vercel/runtime-edge')
 })
-;(globalThis.EdgeRuntime !== undefined ? testOrSkip : test.skip)(
+;(globalThis.RuntimeEdge !== undefined ? testOrSkip : test.skip)(
   'sets headers unsupported in undici',
   async () => {
     const url = new URL('/', 'https://example.vercel.sh')

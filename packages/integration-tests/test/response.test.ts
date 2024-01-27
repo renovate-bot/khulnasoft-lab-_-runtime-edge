@@ -39,7 +39,7 @@ testOrSkip('allow to set `set-cookie` header', async () => {
   response.headers.set('set-cookie', 'foo=bar')
   expect(response.headers.get('set-cookie')).toEqual('foo=bar')
 })
-;(globalThis.EdgeRuntime !== undefined ? testOrSkip : test.skip)(
+;(globalThis.RuntimeEdge !== undefined ? testOrSkip : test.skip)(
   'allow to append multiple `set-cookie` header',
   async () => {
     const response = new Response(null)
@@ -59,7 +59,7 @@ testOrSkip('disallow mutate response headers for redirects', async () => {
   const response = Response.redirect('https://edge-ping.vercel.app/')
   expect(() => response.headers.set('foo', 'bar')).toThrow('immutable')
 })
-;(globalThis.EdgeRuntime !== undefined ? testOrSkip : test.skip)(
+;(globalThis.RuntimeEdge !== undefined ? testOrSkip : test.skip)(
   'allow to mutate response headers for error',
   async () => {
     const response = Response.error()

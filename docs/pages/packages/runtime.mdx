@@ -21,7 +21,7 @@ This package includes built-in TypeScript support.
 The **runtime-edge** package is on top of [@runtime-edge/vm](/packages/vm), extending it with [EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget) API support for handling fetch events.
 
 ```js
-import { EdgeRuntime } from 'runtime-edge'
+import { RuntimeEdge } from 'runtime-edge'
 
 const initialCode = `
 addEventListener('fetch', event => {
@@ -30,7 +30,7 @@ addEventListener('fetch', event => {
   return event.respondWith(fetch(url))
 })`
 
-const runtime = new EdgeRuntime({ initialCode })
+const runtime = new RuntimeEdge({ initialCode })
 
 const response = await runtime.dispatchFetch(
   'http://vercel.com?url=https://example.vercel.sh',
@@ -49,9 +49,9 @@ console.log(response.status)
 You can use `runServer` to expose _any_ Runtime Edge instance as regular HTTP server:
 
 ```js
-import { runServer, EdgeRuntime } from 'runtime-edge'
+import { runServer, RuntimeEdge } from 'runtime-edge'
 
-const runtime = new EdgeRuntime()
+const runtime = new RuntimeEdge()
 const server = await runServer({ runtime })
 
 console.log(`Listening at ${server.url}`)
@@ -59,7 +59,7 @@ console.log(`Listening at ${server.url}`)
 
 ## API
 
-### new EdgeRuntime([options])
+### new RuntimeEdge([options])
 
 It creates a new Runtime Edge instance.
 
@@ -115,7 +115,7 @@ Creates a Node.js HTTP handler.
 
 #### options
 
-##### runtime: EdgeRuntime
+##### runtime: RuntimeEdge
 
 The Runtime Edge instance to be used that should be previously declared.
 

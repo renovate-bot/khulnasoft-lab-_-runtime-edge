@@ -225,7 +225,7 @@ testOrSkip('streams Uint8Array that can be decoded into a string', async () => {
 })
 
 const expectErrorInstanceOf = (error: Error, ctx: any) => {
-  if (globalThis.EdgeRuntime !== undefined) {
+  if (globalThis.RuntimeEdge !== undefined) {
     expect(error).toBeInstanceOf(ctx)
   } else {
     // https://github.com/jestjs/jest/issues/2549

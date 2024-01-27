@@ -308,7 +308,7 @@ export type EdgeContext = VMContext & {
   URLSearchParams: typeof EdgePrimitives.URLSearchParams
   WritableStream: typeof EdgePrimitives.WritableStream
   WritableStreamDefaultWriter: typeof EdgePrimitives.WritableStreamDefaultWriter
-  EdgeRuntime: string
+  RuntimeEdge: string
 }
 
 function addPrimitives(context: VMContext) {
@@ -318,7 +318,7 @@ function addPrimitives(context: VMContext) {
   defineProperty(context, 'clearInterval', { value: clearInterval })
   defineProperty(context, 'clearTimeout', { value: clearTimeout })
   defineProperty(context, 'queueMicrotask', { value: queueMicrotask })
-  defineProperty(context, 'EdgeRuntime', { value: 'runtime-edge' })
+  defineProperty(context, 'RuntimeEdge', { value: 'runtime-edge' })
 
   const transferables = getTransferablePrimitivesFromContext(context)
 
